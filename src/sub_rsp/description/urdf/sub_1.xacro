@@ -1,0 +1,448 @@
+<?xml version="1.0" ?>
+<robot name="sub_1" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find sub_rsp)/description/urdf/materials.xacro" />
+<xacro:include filename="$(find sub_rsp)/description/urdf/sub_1.trans" />
+<xacro:include filename="$(find sub_rsp)/description/urdf/sub_1.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.03187506214755473 0.006421548519609957 0.011890527154674722" rpy="0 0 0"/>
+    <mass value="0.678533267233585"/>
+    <inertia ixx="0.020563" iyy="0.008206" izz="0.028768" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find sub_rsp)/description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find sub_rsp)/description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+
+<link name="middle_plate_1">
+  <inertial>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <mass value="0.41797140010371137"/>
+    <inertia ixx="0.011322" iyy="0.007821" izz="0.019142" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find sub_rsp)/description/meshes/middle_plate_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find sub_rsp)/description/meshes/middle_plate_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+
+<link name="frlm_bracket_1">
+  <inertial>
+    <origin xyz="-0.009899456673446827 -0.023902146711082706 0.014917584800648163" rpy="0 0 0"/>
+    <mass value="0.003850441427080009"/>
+    <inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.070423 0.272037 -0.046391" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find sub_rsp)/description/meshes/frlm_bracket_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.070423 0.272037 -0.046391" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find sub_rsp)/description/meshes/frlm_bracket_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="frrm_bracket_1">
+  <inertial>
+    <origin xyz="-0.009899456673447549 -0.02390214671108637 0.014917584800648656" rpy="0 0 0"/>
+    <mass value="0.0038504414270799066"/>
+    <inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.153977 0.272037 -0.046391" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find sub_rsp)/description/meshes/frrm_bracket_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.153977 0.272037 -0.046391" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find sub_rsp)/description/meshes/frrm_bracket_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="rrm_base_1">
+  <inertial>
+    <origin xyz="-4.6733786848718317e-07 -4.033577736262117e-07 0.009999527154674497" rpy="0 0 0"/>
+    <mass value="0.007427667510882344"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.169378 0.218936 -0.046391" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find sub_rsp)/description/meshes/rrm_base_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.169378 0.218936 -0.046391" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find sub_rsp)/description/meshes/rrm_base_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="frrm_base_1">
+  <inertial>
+    <origin xyz="-4.5667345821565064e-07 -0.008975403357770861 -4.7284532606051144e-07" rpy="0 0 0"/>
+    <mass value="0.008952728531826265"/>
+    <inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.144078 0.303936 -0.082591" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find sub_rsp)/description/meshes/frrm_base_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.144078 0.303936 -0.082591" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find sub_rsp)/description/meshes/frrm_base_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="frlm_base_1">
+  <inertial>
+    <origin xyz="-4.5667345889566224e-07 -0.008975403357769196 -4.7284532637970056e-07" rpy="0 0 0"/>
+    <mass value="0.00895272853182629"/>
+    <inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.080322 0.303936 -0.082591" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find sub_rsp)/description/meshes/frlm_base_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.080322 0.303936 -0.082591" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find sub_rsp)/description/meshes/frlm_base_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="rlm_base_1">
+  <inertial>
+    <origin xyz="-4.6733786339403505e-07 -4.0335777334865597e-07 0.009999527154675066" rpy="0 0 0"/>
+    <mass value="0.007427667510882338"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.105622 0.218936 -0.046391" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find sub_rsp)/description/meshes/rlm_base_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.105622 0.218936 -0.046391" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find sub_rsp)/description/meshes/rlm_base_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="frlm_top_1">
+  <inertial>
+    <origin xyz="-4.5666943310207486e-07 -0.03442876427748026 -4.728450541946483e-07" rpy="0 0 0"/>
+    <mass value="0.022692999467687693"/>
+    <inertia ixx="6e-06" iyy="2e-06" izz="6e-06" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.080322 0.303936 -0.082591" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find sub_rsp)/description/meshes/frlm_top_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.080322 0.303936 -0.082591" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find sub_rsp)/description/meshes/frlm_top_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="frrm_top_1">
+  <inertial>
+    <origin xyz="-4.566694328522747e-07 -0.034428764277481705 -4.7284505398648147e-07" rpy="0 0 0"/>
+    <mass value="0.022692999467687536"/>
+    <inertia ixx="6e-06" iyy="2e-06" izz="6e-06" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.144078 0.303936 -0.082591" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find sub_rsp)/description/meshes/frrm_top_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.144078 0.303936 -0.082591" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find sub_rsp)/description/meshes/frrm_top_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="rrm_top_1">
+  <inertial>
+    <origin xyz="-4.6733786793207166e-07 -4.0335777234945525e-07 0.032633626264224336" rpy="0 0 0"/>
+    <mass value="0.013557728270869584"/>
+    <inertia ixx="3e-06" iyy="3e-06" izz="1e-06" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.169378 0.218936 -0.046391" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find sub_rsp)/description/meshes/rrm_top_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.169378 0.218936 -0.046391" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find sub_rsp)/description/meshes/rrm_top_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="rlm_top_1">
+  <inertial>
+    <origin xyz="-4.673378666553152e-07 -4.033577702122759e-07 0.032633626264223656" rpy="0 0 0"/>
+    <mass value="0.013557728270869547"/>
+    <inertia ixx="3e-06" iyy="3e-06" izz="1e-06" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.105622 0.218936 -0.046391" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find sub_rsp)/description/meshes/rlm_top_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.105622 0.218936 -0.046391" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find sub_rsp)/description/meshes/rlm_top_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="frm_base_1">
+  <inertial>
+    <origin xyz="-4.416766030967967e-07 -4.033577750417461e-07 0.009999527154674288" rpy="0 0 0"/>
+    <mass value="0.007427667510882337"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.169378 -0.166064 -0.046391" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find sub_rsp)/description/meshes/frm_base_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.169378 -0.166064 -0.046391" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find sub_rsp)/description/meshes/frm_base_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="frm_top_1">
+  <inertial>
+    <origin xyz="-4.4167660337435244e-07 -4.03357773542945e-07 0.032633626264224266" rpy="0 0 0"/>
+    <mass value="0.013557728270869625"/>
+    <inertia ixx="3e-06" iyy="3e-06" izz="1e-06" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.169378 -0.166064 -0.046391" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find sub_rsp)/description/meshes/frm_top_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.169378 -0.166064 -0.046391" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find sub_rsp)/description/meshes/frm_top_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="flm_base_1">
+  <inertial>
+    <origin xyz="-4.491750212748391e-07 -3.9919198221993746e-07 0.009999527154673789" rpy="0 0 0"/>
+    <mass value="0.007427667510882338"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.105622 -0.166064 -0.046391" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find sub_rsp)/description/meshes/flm_base_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.105622 -0.166064 -0.046391" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find sub_rsp)/description/meshes/flm_base_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="flm_top_1">
+  <inertial>
+    <origin xyz="-4.491750218438284e-07 -3.9919198327464933e-07 0.032633626264223614" rpy="0 0 0"/>
+    <mass value="0.013557728270869547"/>
+    <inertia ixx="3e-06" iyy="3e-06" izz="1e-06" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.105622 -0.166064 -0.046391" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find sub_rsp)/description/meshes/flm_top_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.105622 -0.166064 -0.046391" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find sub_rsp)/description/meshes/flm_top_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Rigid 1" type="fixed">
+  <!-- <origin xyz="-1.013122 0.723391 -0.068564" rpy="0 0 0"/> -->
+  <origin xyz="0 0 0" rpy="0 0 0"/> <!-- complete -->
+  <parent link="base_link"/>
+  <child link="middle_plate_1"/>
+</joint>
+
+<joint name="Rigid 2" type="fixed">
+  <!-- <origin xyz="0.942699 -0.995428 0.114955" rpy="0 0 0"/> -->
+  <origin xyz="-0.0704230000 -0.272037 0.046391" rpy="0 0 0"/> <!-- complete -->
+  <parent link="middle_plate_1"/>
+  <child link="frlm_bracket_1"/>
+</joint>
+
+<joint name="Rigid 3" type="fixed">
+  <!-- <origin xyz="1.167099 -0.995428 0.114955" rpy="0 0 0"/> -->
+  <origin xyz="0.153977 -0.272037 0.046391" rpy="0 0 0"/> <!-- complete -->
+  <parent link="middle_plate_1"/>
+  <child link="frrm_bracket_1"/>
+</joint>
+
+<joint name="Rigid 4" type="fixed">
+  <!-- <origin xyz="1.1825 -0.942327 0.114955" rpy="0 0 0"/> -->
+  <origin xyz="0.169378 -0.218936 0.046391" rpy="0 0 0"/> 
+  <parent link="middle_plate_1"/>
+  <child link="rrm_base_1"/>
+</joint>
+
+<joint name="Rigid 7" type="fixed">
+  <!-- <origin xyz="0.9075 -0.942327 0.114955" rpy="0 0 0"/> -->
+  <origin xyz="-0.105622 -0.218936 0.046391" rpy="0 0 0"/>
+  <parent link="middle_plate_1"/>
+  <child link="rlm_base_1"/>
+</joint>
+
+<joint name="Rigid 12" type="fixed">
+  <!-- <origin xyz="1.1825 -0.557327 0.114955" rpy="0 0 0"/> -->
+  <origin xyz="0.169378 0.166064 0.046391" rpy="0 0 0"/>
+  <parent link="middle_plate_1"/>
+  <child link="frm_base_1"/>
+</joint>
+
+<joint name="Rigid 14" type="fixed">
+  <!-- <origin xyz="0.9075 -0.557327 0.114955" rpy="0 0 0"/> -->
+  <origin xyz="-0.105622 0.166064 0.046391" rpy="0 0 0"/>
+  <parent link="middle_plate_1"/>
+  <child link="flm_base_1"/>
+</joint>
+
+<joint name="Rigid 5" type="fixed">
+  <origin xyz="-0.009899 -0.031899 0.0362" rpy="0 0 0"/>
+  <parent link="frrm_bracket_1"/>
+  <child link="frrm_base_1"/>
+</joint>
+
+<joint name="Rigid 6" type="fixed">
+  <origin xyz="-0.009899 -0.031899 0.0362" rpy="0 0 0"/>
+  <parent link="frlm_bracket_1"/>
+  <child link="frlm_base_1"/>
+</joint>
+
+<joint name="frlm_joint" type="continuous">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="frlm_base_1"/>
+  <child link="frlm_top_1"/>
+  <axis xyz="-0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="frrm_joint" type="continuous">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="frrm_base_1"/>
+  <child link="frrm_top_1"/>
+  <axis xyz="-0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="rrm_joint" type="continuous">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="rrm_base_1"/>
+  <child link="rrm_top_1"/>
+  <axis xyz="-0.0 -0.0 1.0"/>
+</joint>
+
+<joint name="rlm_joint" type="continuous">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="rlm_base_1"/>
+  <child link="rlm_top_1"/>
+  <axis xyz="0.0 0.0 -1.0"/>
+</joint>
+
+<joint name="frm_joint" type="continuous">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="frm_base_1"/>
+  <child link="frm_top_1"/>
+  <axis xyz="0.0 -0.0 1.0"/>
+</joint>
+
+<joint name="flm_joint" type="continuous">
+  <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+  <parent link="flm_base_1"/>
+  <child link="flm_top_1"/>
+  <axis xyz="-0.0 -0.0 1.0"/>
+</joint>
+
+</robot>
