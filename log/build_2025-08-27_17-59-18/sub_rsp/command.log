@@ -1,0 +1,4 @@
+Invoking command in '/home/nwhit210/sub_ws/build/sub_rsp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/nwhit210/sub_ws/build/sub_rsp -- -j8 -l8
+Invoked command in '/home/nwhit210/sub_ws/build/sub_rsp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/nwhit210/sub_ws/build/sub_rsp -- -j8 -l8
+Invoking command in '/home/nwhit210/sub_ws/build/sub_rsp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/nwhit210/sub_ws/build/sub_rsp
+Invoked command in '/home/nwhit210/sub_ws/build/sub_rsp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/nwhit210/sub_ws/build/sub_rsp

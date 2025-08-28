@@ -1,0 +1,148 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<!-- Sim Mode -->
+  <xacro:if value="$(arg sim_mode)">
+    <ros2_control name="GazeboSystem" type="system">
+      <hardware>
+          <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+      </hardware>
+
+      <joint name="flm_joint">
+          <command_interface name="velocity">
+              <param name="min">-10</param>
+              <param name="max">10</param>
+          </command_interface>
+          <state_interface name="position" />
+          <state_interface name="velocity" />
+      </joint>
+
+      <joint name="frm_joint">
+          <command_interface name="velocity">
+              <param name="min">-10</param>
+              <param name="max">10</param>
+          </command_interface>
+          <state_interface name="velocity" />
+          <state_interface name="position" />
+      </joint>
+
+      <joint name="rrm_joint">
+          <command_interface name="velocity">
+              <param name="min">-10</param>
+              <param name="max">10</param>
+          </command_interface>
+          <state_interface name="position" />
+          <state_interface name="velocity" />
+      </joint>
+      
+      <joint name="rlm_joint">
+          <command_interface name="velocity">
+              <param name="min">-10</param>
+              <param name="max">10</param>
+          </command_interface>
+          <state_interface name="velocity" />
+          <state_interface name="position" />
+      </joint>
+
+      <joint name="frrm_joint">
+          <command_interface name="velocity">
+              <param name="min">-10</param>
+              <param name="max">10</param>
+          </command_interface>
+          <state_interface name="position" />
+          <state_interface name="velocity" />
+      </joint>
+      
+      <joint name="frlm_joint">
+          <command_interface name="velocity">
+              <param name="min">-10</param>
+              <param name="max">10</param>
+          </command_interface>
+          <state_interface name="velocity" />
+          <state_interface name="position" />
+      </joint>
+    </ros2_control>
+    <gazebo>
+      <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
+        <parameters>$(find sub_rsp)/config/my_controllers.yaml</parameters>
+        <parameters>$(find sub_rsp)/config/sim.yaml</parameters>
+      </plugin>
+    </gazebo>
+  </xacro:if>
+
+<!-- Real Machine -->
+  <xacro:unless value="$(arg sim_mode)">
+    <ros2_control name="RealRobot" type="system">
+        <hardware>
+            <plugin>diffdrive_arduino/DiffDriveArduinoHardware</plugin>
+            <param name="front_left_drone">flm_joint</param>
+            <param name="front_right_drone">frm_joint</param>
+            <param name="rear_left_drone">rlm_joint</param>
+            <param name="rear_right_drone">rrm_joint</param>
+            <param name="forward_left_motor">frlm_joint</param>
+            <param name="forward_right_motor">frrm_joint</param>
+        </hardware>
+
+        <joint name="flm_joint">
+          <command_interface name="velocity">
+              <param name="min">-10</param>
+              <param name="max">10</param>
+          </command_interface>
+          <state_interface name="position" />
+          <state_interface name="velocity" />
+      </joint>
+
+      <joint name="frm_joint">
+          <command_interface name="velocity">
+              <param name="min">-10</param>
+              <param name="max">10</param>
+          </command_interface>
+          <state_interface name="velocity" />
+          <state_interface name="position" />
+      </joint>
+
+      <joint name="rrm_joint">
+          <command_interface name="velocity">
+              <param name="min">-10</param>
+              <param name="max">10</param>
+          </command_interface>
+          <state_interface name="position" />
+          <state_interface name="velocity" />
+      </joint>
+      
+      <joint name="rlm_joint">
+          <command_interface name="velocity">
+              <param name="min">-10</param>
+              <param name="max">10</param>
+          </command_interface>
+          <state_interface name="velocity" />
+          <state_interface name="position" />
+      </joint>
+
+      <joint name="frrm_joint">
+          <command_interface name="velocity">
+              <param name="min">-10</param>
+              <param name="max">10</param>
+          </command_interface>
+          <state_interface name="position" />
+          <state_interface name="velocity" />
+      </joint>
+      
+      <joint name="frlm_joint">
+          <command_interface name="velocity">
+              <param name="min">-10</param>
+              <param name="max">10</param>
+          </command_interface>
+          <state_interface name="velocity" />
+          <state_interface name="position" />
+      </joint>
+    </ros2_control>
+
+    <gazebo>
+        <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
+          <parameters>$(find sub_rsp)/config/my_controllers.yaml</parameters>
+        </plugin>
+    </gazebo>
+  </xacro:unless>
+
+</robot>

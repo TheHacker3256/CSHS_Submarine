@@ -152,7 +152,7 @@ hardware_interface::CallbackReturn DiffDriveArduinoHardware::on_configure(
 {
   RCLCPP_INFO(rclcpp::get_logger("DiffDriveArduinoHardware"), "Configuring ...please wait...");
 
-  //on configure
+  initGPIO(); //on configure
 
   RCLCPP_INFO(rclcpp::get_logger("DiffDriveArduinoHardware"), "Successfully configured!");
 
@@ -176,7 +176,7 @@ hardware_interface::CallbackReturn DiffDriveArduinoHardware::on_activate(
 {
   RCLCPP_INFO(rclcpp::get_logger("DiffDriveArduinoHardware"), "Activating ...please wait...");
 
-  //on activate
+  initMotors(); //on activate
   
   RCLCPP_INFO(rclcpp::get_logger("DiffDriveArduinoHardware"), "Successfully activated!");
   return hardware_interface::CallbackReturn::SUCCESS;
@@ -187,7 +187,7 @@ hardware_interface::CallbackReturn DiffDriveArduinoHardware::on_deactivate(
 {
   RCLCPP_INFO(rclcpp::get_logger("DiffDriveArduinoHardware"), "Deactivating ...please wait...");
 
-  //on deactivate
+  deactivateGPIO(); //on deactivate
 
   RCLCPP_INFO(rclcpp::get_logger("DiffDriveArduinoHardware"), "Successfully deactivated!");
   return hardware_interface::CallbackReturn::SUCCESS;

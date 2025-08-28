@@ -1,0 +1,265 @@
+[0.000000] (-) TimerEvent: {}
+[0.000246] (diffdrive_arduino) JobQueued: {'identifier': 'diffdrive_arduino', 'dependencies': OrderedDict()}
+[0.000314] (mecanum_drive_controller) JobQueued: {'identifier': 'mecanum_drive_controller', 'dependencies': OrderedDict()}
+[0.000328] (sub_1_description) JobQueued: {'identifier': 'sub_1_description', 'dependencies': OrderedDict()}
+[0.000337] (sub_rsp) JobQueued: {'identifier': 'sub_rsp', 'dependencies': OrderedDict()}
+[0.000346] (diffdrive_arduino) JobStarted: {'identifier': 'diffdrive_arduino'}
+[0.007222] (mecanum_drive_controller) JobStarted: {'identifier': 'mecanum_drive_controller'}
+[0.011100] (sub_1_description) JobStarted: {'identifier': 'sub_1_description'}
+[0.015205] (sub_rsp) JobStarted: {'identifier': 'sub_rsp'}
+[0.018671] (diffdrive_arduino) JobProgress: {'identifier': 'diffdrive_arduino', 'progress': 'cmake'}
+[0.019890] (diffdrive_arduino) Command: {'cmd': ['/usr/bin/cmake', '/home/nwhit210/sub_ws/src/diffdrive_arduino', '-DCMAKE_INSTALL_PREFIX=/home/nwhit210/sub_ws/install/diffdrive_arduino'], 'cwd': '/home/nwhit210/sub_ws/build/diffdrive_arduino', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'nwhit210'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('WT_PROFILE_ID', '{4ff56d04-d9cf-57ea-bae2-ad396374e7e3}'), ('HOME', '/home/nwhit210'), ('OLDPWD', '/home/nwhit210'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'nwhit210'), ('NAME', 'nwhit210'), ('WSL_INTEROP', '/run/WSL/423_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Python312/Scripts/:/mnt/c/Python312/:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/VMware/VMware Workstation/bin/:/mnt/c/Program Files (x86)/Razer/ChromaBroadcast/bin:/mnt/c/Program Files/Razer/ChromaBroadcast/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Windows/system32/config/systemprofile/AppData/Local/Microsoft/WindowsApps:/mnt/c/Gradle/gradle-8.10.1/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/VSCodium/bin:/mnt/c/Program Files/Tailscale/:/mnt/c/apache-maven-3.9.9/bin:/mnt/c/Program Files/Java/jdk-22/bin:/mnt/c/Program Files/nodejs/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Calibre2/:/mnt/c/Users/Whitehouse_Noah/AppData/Roaming/Python/Python312/Scripts:/mnt/c/Program Files/usbipd-win/:/mnt/c/Users/Whitehouse_Noah/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Whitehouse_Noah/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Whitehouse_Noah/AppData/Roaming/npm:/mnt/c/Users/Whitehouse_Noah/.lmstudio/bin:/mnt/c/Program Files (x86)/Nmap:/mnt/c/Users/Whitehouse_Noah/AppData/Local/GitHubDesktop/bin:/snap/bin'), ('WT_SESSION', 'daf02747-117b-4ff8-930f-d29d72b4b20f'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/nwhit210/sub_ws/build/diffdrive_arduino'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'WT_SESSION:WT_PROFILE_ID:'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.022904] (mecanum_drive_controller) JobProgress: {'identifier': 'mecanum_drive_controller', 'progress': 'cmake'}
+[0.023621] (mecanum_drive_controller) Command: {'cmd': ['/usr/bin/cmake', '/home/nwhit210/sub_ws/src/mecanum_drive_controller', '-DCMAKE_INSTALL_PREFIX=/home/nwhit210/sub_ws/install/mecanum_drive_controller'], 'cwd': '/home/nwhit210/sub_ws/build/mecanum_drive_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'nwhit210'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('WT_PROFILE_ID', '{4ff56d04-d9cf-57ea-bae2-ad396374e7e3}'), ('HOME', '/home/nwhit210'), ('OLDPWD', '/home/nwhit210'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'nwhit210'), ('NAME', 'nwhit210'), ('WSL_INTEROP', '/run/WSL/423_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Python312/Scripts/:/mnt/c/Python312/:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/VMware/VMware Workstation/bin/:/mnt/c/Program Files (x86)/Razer/ChromaBroadcast/bin:/mnt/c/Program Files/Razer/ChromaBroadcast/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Windows/system32/config/systemprofile/AppData/Local/Microsoft/WindowsApps:/mnt/c/Gradle/gradle-8.10.1/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/VSCodium/bin:/mnt/c/Program Files/Tailscale/:/mnt/c/apache-maven-3.9.9/bin:/mnt/c/Program Files/Java/jdk-22/bin:/mnt/c/Program Files/nodejs/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Calibre2/:/mnt/c/Users/Whitehouse_Noah/AppData/Roaming/Python/Python312/Scripts:/mnt/c/Program Files/usbipd-win/:/mnt/c/Users/Whitehouse_Noah/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Whitehouse_Noah/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Whitehouse_Noah/AppData/Roaming/npm:/mnt/c/Users/Whitehouse_Noah/.lmstudio/bin:/mnt/c/Program Files (x86)/Nmap:/mnt/c/Users/Whitehouse_Noah/AppData/Local/GitHubDesktop/bin:/snap/bin'), ('WT_SESSION', 'daf02747-117b-4ff8-930f-d29d72b4b20f'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/nwhit210/sub_ws/build/mecanum_drive_controller'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'WT_SESSION:WT_PROFILE_ID:'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.027300] (sub_1_description) JobProgress: {'identifier': 'sub_1_description', 'progress': 'cmake'}
+[0.029659] (sub_1_description) Command: {'cmd': ['/usr/bin/cmake', '/home/nwhit210/sub_ws/src/sub_1_description', '-DCATKIN_INSTALL_INTO_PREFIX_ROOT=0', '-DCMAKE_INSTALL_PREFIX=/home/nwhit210/sub_ws/install/sub_1_description'], 'cwd': '/home/nwhit210/sub_ws/build/sub_1_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'nwhit210'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('WT_PROFILE_ID', '{4ff56d04-d9cf-57ea-bae2-ad396374e7e3}'), ('HOME', '/home/nwhit210'), ('OLDPWD', '/home/nwhit210'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'nwhit210'), ('NAME', 'nwhit210'), ('WSL_INTEROP', '/run/WSL/423_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Python312/Scripts/:/mnt/c/Python312/:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/VMware/VMware Workstation/bin/:/mnt/c/Program Files (x86)/Razer/ChromaBroadcast/bin:/mnt/c/Program Files/Razer/ChromaBroadcast/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Windows/system32/config/systemprofile/AppData/Local/Microsoft/WindowsApps:/mnt/c/Gradle/gradle-8.10.1/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/VSCodium/bin:/mnt/c/Program Files/Tailscale/:/mnt/c/apache-maven-3.9.9/bin:/mnt/c/Program Files/Java/jdk-22/bin:/mnt/c/Program Files/nodejs/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Calibre2/:/mnt/c/Users/Whitehouse_Noah/AppData/Roaming/Python/Python312/Scripts:/mnt/c/Program Files/usbipd-win/:/mnt/c/Users/Whitehouse_Noah/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Whitehouse_Noah/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Whitehouse_Noah/AppData/Roaming/npm:/mnt/c/Users/Whitehouse_Noah/.lmstudio/bin:/mnt/c/Program Files (x86)/Nmap:/mnt/c/Users/Whitehouse_Noah/AppData/Local/GitHubDesktop/bin:/snap/bin'), ('WT_SESSION', 'daf02747-117b-4ff8-930f-d29d72b4b20f'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/nwhit210/sub_ws/build/sub_1_description'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'WT_SESSION:WT_PROFILE_ID:')]), 'shell': False}
+[0.033016] (sub_rsp) JobProgress: {'identifier': 'sub_rsp', 'progress': 'cmake'}
+[0.033927] (sub_rsp) JobProgress: {'identifier': 'sub_rsp', 'progress': 'build'}
+[0.035103] (sub_rsp) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nwhit210/sub_ws/build/sub_rsp', '--', '-j8', '-l8'], 'cwd': '/home/nwhit210/sub_ws/build/sub_rsp', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'nwhit210'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('WT_PROFILE_ID', '{4ff56d04-d9cf-57ea-bae2-ad396374e7e3}'), ('HOME', '/home/nwhit210'), ('OLDPWD', '/home/nwhit210'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'nwhit210'), ('NAME', 'nwhit210'), ('WSL_INTEROP', '/run/WSL/423_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Python312/Scripts/:/mnt/c/Python312/:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/VMware/VMware Workstation/bin/:/mnt/c/Program Files (x86)/Razer/ChromaBroadcast/bin:/mnt/c/Program Files/Razer/ChromaBroadcast/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Windows/system32/config/systemprofile/AppData/Local/Microsoft/WindowsApps:/mnt/c/Gradle/gradle-8.10.1/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/VSCodium/bin:/mnt/c/Program Files/Tailscale/:/mnt/c/apache-maven-3.9.9/bin:/mnt/c/Program Files/Java/jdk-22/bin:/mnt/c/Program Files/nodejs/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Calibre2/:/mnt/c/Users/Whitehouse_Noah/AppData/Roaming/Python/Python312/Scripts:/mnt/c/Program Files/usbipd-win/:/mnt/c/Users/Whitehouse_Noah/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Whitehouse_Noah/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Whitehouse_Noah/AppData/Roaming/npm:/mnt/c/Users/Whitehouse_Noah/.lmstudio/bin:/mnt/c/Program Files (x86)/Nmap:/mnt/c/Users/Whitehouse_Noah/AppData/Local/GitHubDesktop/bin:/snap/bin'), ('WT_SESSION', 'daf02747-117b-4ff8-930f-d29d72b4b20f'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/nwhit210/sub_ws/build/sub_rsp'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'WT_SESSION:WT_PROFILE_ID:'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.069860] (sub_1_description) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):\n'}
+[0.070030] (sub_1_description) StderrLine: {'line': b'  Compatibility with CMake < 2.8.12 will be removed from a future version of\n'}
+[0.070082] (sub_1_description) StderrLine: {'line': b'  CMake.\n'}
+[0.070117] (sub_1_description) StderrLine: {'line': b'\n'}
+[0.070147] (sub_1_description) StderrLine: {'line': b'  Update the VERSION argument <min> value or use a ...<max> suffix to tell\n'}
+[0.070177] (sub_1_description) StderrLine: {'line': b'  CMake that the project does not need compatibility with older versions.\n'}
+[0.070207] (sub_1_description) StderrLine: {'line': b'\n'}
+[0.070235] (sub_1_description) StderrLine: {'line': b'\x1b[0m\n'}
+[0.099070] (-) TimerEvent: {}
+[0.115099] (sub_rsp) CommandEnded: {'returncode': 0}
+[0.116333] (sub_rsp) JobProgress: {'identifier': 'sub_rsp', 'progress': 'install'}
+[0.121510] (sub_rsp) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/nwhit210/sub_ws/build/sub_rsp'], 'cwd': '/home/nwhit210/sub_ws/build/sub_rsp', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'nwhit210'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('WT_PROFILE_ID', '{4ff56d04-d9cf-57ea-bae2-ad396374e7e3}'), ('HOME', '/home/nwhit210'), ('OLDPWD', '/home/nwhit210'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'nwhit210'), ('NAME', 'nwhit210'), ('WSL_INTEROP', '/run/WSL/423_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Python312/Scripts/:/mnt/c/Python312/:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/VMware/VMware Workstation/bin/:/mnt/c/Program Files (x86)/Razer/ChromaBroadcast/bin:/mnt/c/Program Files/Razer/ChromaBroadcast/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Windows/system32/config/systemprofile/AppData/Local/Microsoft/WindowsApps:/mnt/c/Gradle/gradle-8.10.1/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/VSCodium/bin:/mnt/c/Program Files/Tailscale/:/mnt/c/apache-maven-3.9.9/bin:/mnt/c/Program Files/Java/jdk-22/bin:/mnt/c/Program Files/nodejs/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Calibre2/:/mnt/c/Users/Whitehouse_Noah/AppData/Roaming/Python/Python312/Scripts:/mnt/c/Program Files/usbipd-win/:/mnt/c/Users/Whitehouse_Noah/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Whitehouse_Noah/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Whitehouse_Noah/AppData/Roaming/npm:/mnt/c/Users/Whitehouse_Noah/.lmstudio/bin:/mnt/c/Program Files (x86)/Nmap:/mnt/c/Users/Whitehouse_Noah/AppData/Local/GitHubDesktop/bin:/snap/bin'), ('WT_SESSION', 'daf02747-117b-4ff8-930f-d29d72b4b20f'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/nwhit210/sub_ws/build/sub_rsp'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', 'WT_SESSION:WT_PROFILE_ID:'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.128114] (sub_rsp) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.128761] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/config\n'}
+[0.129109] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/config/my_controllers.yaml\n'}
+[0.129378] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/config/empty.yaml\n'}
+[0.129577] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/config/joystick.yaml\n'}
+[0.129662] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/config/sim.yaml\n'}
+[0.129968] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description\n'}
+[0.130223] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/robot.urdf.xacro\n'}
+[0.130315] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/robot_core.xacro\n'}
+[0.130431] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/ros2_control.xacro\n'}
+[0.130505] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/sensors\n'}
+[0.130714] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/sensors/camera.xacro\n'}
+[0.130787] (sub_rsp) StdoutLine: {'line': b"-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/stl's\n"}
+[0.130823] (sub_rsp) StdoutLine: {'line': b"-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/stl's/Motors\n"}
+[0.130855] (sub_rsp) StdoutLine: {'line': b"-- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/stl's/Motors/Motor Outer Casing.stl\n"}
+[0.130888] (sub_rsp) StdoutLine: {'line': b"-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/stl's/Motors/motorInnerCasing.stl\n"}
+[0.130916] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/launch\n'}
+[0.131005] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/launch/launch_bot.launch.py\n'}
+[0.131037] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/launch/launch_sim.launch.py\n'}
+[0.131068] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/launch/joint_pub.launch.py\n'}
+[0.131097] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/launch/__pycache__\n'}
+[0.131126] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/launch/__pycache__/launch_sim.cpython-310.pyc\n'}
+[0.131155] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/launch/__pycache__/launch.cpython-310.pyc\n'}
+[0.131203] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/launch/rsp.launch.py\n'}
+[0.131242] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/launch/joystick.launch.py\n'}
+[0.131272] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/worlds\n'}
+[0.131303] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/worlds/empty.world\n'}
+[0.131332] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/ament_index/resource_index/package_run_dependencies/sub_rsp\n'}
+[0.131368] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/ament_index/resource_index/parent_prefix_path/sub_rsp\n'}
+[0.131400] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/environment/ament_prefix_path.sh\n'}
+[0.131435] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/environment/ament_prefix_path.dsv\n'}
+[0.131466] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/environment/path.sh\n'}
+[0.131497] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/environment/path.dsv\n'}
+[0.131573] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/local_setup.bash\n'}
+[0.131650] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/local_setup.sh\n'}
+[0.131696] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/local_setup.zsh\n'}
+[0.131736] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/local_setup.dsv\n'}
+[0.131943] (sub_rsp) StdoutLine: {'line': b'-- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/package.dsv\n'}
+[0.132029] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/ament_index/resource_index/packages/sub_rsp\n'}
+[0.132099] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/cmake/sub_rspConfig.cmake\n'}
+[0.132165] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/cmake/sub_rspConfig-version.cmake\n'}
+[0.132341] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/package.xml\n'}
+[0.133880] (sub_rsp) CommandEnded: {'returncode': 0}
+[0.157584] (sub_rsp) JobEnded: {'identifier': 'sub_rsp', 'rc': 0}
+[0.199207] (-) TimerEvent: {}
+[0.299592] (-) TimerEvent: {}
+[0.345453] (sub_1_description) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.354009] (diffdrive_arduino) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.399760] (-) TimerEvent: {}
+[0.401362] (mecanum_drive_controller) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.500023] (-) TimerEvent: {}
+[0.600401] (-) TimerEvent: {}
+[0.700828] (-) TimerEvent: {}
+[0.801239] (-) TimerEvent: {}
+[0.901622] (-) TimerEvent: {}
+[0.999664] (diffdrive_arduino) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.001698] (-) TimerEvent: {}
+[1.101987] (-) TimerEvent: {}
+[1.201141] (diffdrive_arduino) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.201733] (sub_1_description) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.202525] (-) TimerEvent: {}
+[1.207316] (diffdrive_arduino) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.207847] (diffdrive_arduino) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.208689] (diffdrive_arduino) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.214557] (diffdrive_arduino) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.233364] (mecanum_drive_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.302698] (-) TimerEvent: {}
+[1.334274] (diffdrive_arduino) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.402958] (-) TimerEvent: {}
+[1.420854] (diffdrive_arduino) StdoutLine: {'line': b'-- Found hardware_interface: 2.50.0 (/opt/ros/humble/share/hardware_interface/cmake)\n'}
+[1.471325] (mecanum_drive_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.476113] (mecanum_drive_controller) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.476316] (mecanum_drive_controller) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.476553] (mecanum_drive_controller) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.478081] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.503203] (-) TimerEvent: {}
+[1.588551] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.603311] (-) TimerEvent: {}
+[1.659062] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found controller_interface: 2.50.0 (/opt/ros/humble/share/controller_interface/cmake)\n'}
+[1.703423] (-) TimerEvent: {}
+[1.777529] (diffdrive_arduino) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.783497] (diffdrive_arduino) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.795892] (diffdrive_arduino) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.803561] (-) TimerEvent: {}
+[1.814044] (diffdrive_arduino) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.834016] (diffdrive_arduino) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.903766] (-) TimerEvent: {}
+[1.960709] (sub_1_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.971469] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.975046] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.980586] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.988435] (mecanum_drive_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.999901] (mecanum_drive_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.003877] (-) TimerEvent: {}
+[2.104289] (-) TimerEvent: {}
+[2.194786] (sub_1_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.200808] (sub_1_description) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.201126] (sub_1_description) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.201417] (sub_1_description) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.203841] (sub_1_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.204380] (-) TimerEvent: {}
+[2.304635] (-) TimerEvent: {}
+[2.404962] (-) TimerEvent: {}
+[2.438234] (sub_1_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.444605] (sub_1_description) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.444921] (sub_1_description) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.445291] (sub_1_description) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.505082] (-) TimerEvent: {}
+[2.605458] (-) TimerEvent: {}
+[2.705789] (-) TimerEvent: {}
+[2.806109] (-) TimerEvent: {}
+[2.906488] (-) TimerEvent: {}
+[3.006999] (-) TimerEvent: {}
+[3.107441] (-) TimerEvent: {}
+[3.207783] (-) TimerEvent: {}
+[3.308097] (-) TimerEvent: {}
+[3.408421] (-) TimerEvent: {}
+[3.508803] (-) TimerEvent: {}
+[3.609113] (-) TimerEvent: {}
+[3.709567] (-) TimerEvent: {}
+[3.809890] (-) TimerEvent: {}
+[3.910255] (-) TimerEvent: {}
+[4.010655] (-) TimerEvent: {}
+[4.111105] (-) TimerEvent: {}
+[4.211479] (-) TimerEvent: {}
+[4.233680] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[4.233930] (diffdrive_arduino) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[4.237714] (diffdrive_arduino) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[4.237964] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[4.269474] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[4.269806] (diffdrive_arduino) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[4.307901] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[4.308224] (diffdrive_arduino) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[4.311232] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[4.311433] (diffdrive_arduino) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[4.311528] (-) TimerEvent: {}
+[4.411835] (-) TimerEvent: {}
+[4.512340] (-) TimerEvent: {}
+[4.612710] (-) TimerEvent: {}
+[4.627069] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[4.634132] (diffdrive_arduino) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[4.640236] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[4.640476] (diffdrive_arduino) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[4.646665] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[4.648113] (diffdrive_arduino) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[4.712825] (-) TimerEvent: {}
+[4.795284] (mecanum_drive_controller) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[4.795580] (diffdrive_arduino) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[4.807433] (diffdrive_arduino) StdoutLine: {'line': b'-- Looking for C++ include pthread.h\n'}
+[4.807587] (mecanum_drive_controller) StdoutLine: {'line': b'-- Looking for C++ include pthread.h\n'}
+[4.813039] (-) TimerEvent: {}
+[4.913470] (-) TimerEvent: {}
+[5.013994] (-) TimerEvent: {}
+[5.015085] (diffdrive_arduino) StdoutLine: {'line': b'-- Looking for C++ include pthread.h - found\n'}
+[5.015625] (diffdrive_arduino) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[5.051445] (mecanum_drive_controller) StdoutLine: {'line': b'-- Looking for C++ include pthread.h - found\n'}
+[5.051992] (mecanum_drive_controller) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[5.103593] (sub_1_description) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:10 (find_package):\n'}
+[5.103914] (sub_1_description) StderrLine: {'line': b'  By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has\n'}
+[5.104022] (sub_1_description) StderrLine: {'line': b'  asked CMake to find a package configuration file provided by "catkin", but\n'}
+[5.104121] (sub_1_description) StderrLine: {'line': b'  CMake did not find one.\n'}
+[5.104226] (sub_1_description) StderrLine: {'line': b'\n'}
+[5.104326] (sub_1_description) StderrLine: {'line': b'  Could not find a package configuration file provided by "catkin" with any\n'}
+[5.104410] (sub_1_description) StderrLine: {'line': b'  of the following names:\n'}
+[5.104497] (sub_1_description) StderrLine: {'line': b'\n'}
+[5.104585] (sub_1_description) StderrLine: {'line': b'    catkinConfig.cmake\n'}
+[5.104674] (sub_1_description) StderrLine: {'line': b'    catkin-config.cmake\n'}
+[5.104751] (sub_1_description) StderrLine: {'line': b'\n'}
+[5.104831] (sub_1_description) StderrLine: {'line': b'  Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set\n'}
+[5.104922] (sub_1_description) StderrLine: {'line': b'  "catkin_DIR" to a directory containing one of the above files.  If "catkin"\n'}
+[5.105001] (sub_1_description) StderrLine: {'line': b'  provides a separate development package or SDK, be sure it has been\n'}
+[5.105083] (sub_1_description) StderrLine: {'line': b'  installed.\n'}
+[5.105168] (sub_1_description) StderrLine: {'line': b'\n'}
+[5.105244] (sub_1_description) StderrLine: {'line': b'\x1b[0m\n'}
+[5.105314] (sub_1_description) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[5.105405] (sub_1_description) StdoutLine: {'line': b'See also "/home/nwhit210/sub_ws/build/sub_1_description/CMakeFiles/CMakeOutput.log".\n'}
+[5.106921] (sub_1_description) CommandEnded: {'returncode': 1}
+[5.114157] (-) TimerEvent: {}
+[5.121625] (sub_1_description) JobEnded: {'identifier': 'sub_1_description', 'rc': 1}
+[5.214472] (-) TimerEvent: {}
+[5.279437] (diffdrive_arduino) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[5.280549] (diffdrive_arduino) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[5.314644] (-) TimerEvent: {}
+[5.337147] (mecanum_drive_controller) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[5.337927] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[5.353088] (diffdrive_arduino) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 1.3.11 (/opt/ros/humble/share/ament_cmake_gtest/cmake)\n'}
+[5.373536] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found generate_parameter_library: 0.4.0 (/opt/ros/humble/share/generate_parameter_library/cmake)\n'}
+[5.376183] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found parameter_traits: 0.4.0 (/opt/ros/humble/share/parameter_traits/cmake)\n'}
+[5.400423] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[5.406386] (diffdrive_arduino) StdoutLine: {'line': b'-- Configuring done\n'}
+[5.414745] (-) TimerEvent: {}
+[5.420302] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found realtime_tools: 2.13.0 (/opt/ros/humble/share/realtime_tools/cmake)\n'}
+[5.436852] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found std_srvs: 4.8.0 (/opt/ros/humble/share/std_srvs/cmake)\n'}
+[5.453766] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)\n'}
+[5.458365] (diffdrive_arduino) StdoutLine: {'line': b'-- Generating done\n'}
+[5.459893] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.12 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[5.461525] (diffdrive_arduino) StdoutLine: {'line': b'-- Build files have been written to: /home/nwhit210/sub_ws/build/diffdrive_arduino\n'}
+[5.468773] (diffdrive_arduino) JobEnded: {'identifier': 'diffdrive_arduino', 'rc': 'SIGINT'}
+[5.514987] (-) TimerEvent: {}
+[5.570039] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[5.571643] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[5.571872] (mecanum_drive_controller) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[5.615109] (-) TimerEvent: {}
+[5.636578] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found ament_cmake_gmock: 1.3.11 (/opt/ros/humble/share/ament_cmake_gmock/cmake)\n'}
+[5.640672] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found controller_manager: 2.50.0 (/opt/ros/humble/share/controller_manager/cmake)\n'}
+[5.674668] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found ros2_control_test_assets: 2.50.0 (/opt/ros/humble/share/ros2_control_test_assets/cmake)\n'}
+[5.679307] (mecanum_drive_controller) StdoutLine: {'line': b"-- Found gmock sources under '/opt/ros/humble/src/gmock_vendor': C++ tests using 'Google Mock' will be built\n"}
+[5.715230] (-) TimerEvent: {}
+[5.815558] (-) TimerEvent: {}
+[5.915918] (-) TimerEvent: {}
+[5.936772] (mecanum_drive_controller) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[6.016025] (-) TimerEvent: {}
+[6.116472] (-) TimerEvent: {}
+[6.216881] (-) TimerEvent: {}
+[6.317236] (-) TimerEvent: {}
+[6.417568] (-) TimerEvent: {}
+[6.517892] (-) TimerEvent: {}
+[6.618228] (-) TimerEvent: {}
+[6.676085] (mecanum_drive_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[6.718413] (-) TimerEvent: {}
+[6.818847] (-) TimerEvent: {}
+[6.919331] (-) TimerEvent: {}
+[6.972925] (mecanum_drive_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[6.977290] (mecanum_drive_controller) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[6.977726] (mecanum_drive_controller) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[6.977985] (mecanum_drive_controller) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[6.984363] (mecanum_drive_controller) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 1.3.11 (/opt/ros/humble/share/ament_cmake_gtest/cmake)\n'}
+[6.986493] (mecanum_drive_controller) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[7.019622] (-) TimerEvent: {}
+[7.061296] (mecanum_drive_controller) StdoutLine: {'line': b'-- Configuring done\n'}
+[7.119743] (-) TimerEvent: {}
+[7.130260] (mecanum_drive_controller) StdoutLine: {'line': b'-- Generating done\n'}
+[7.142473] (mecanum_drive_controller) StdoutLine: {'line': b'-- Build files have been written to: /home/nwhit210/sub_ws/build/mecanum_drive_controller\n'}
+[7.152938] (mecanum_drive_controller) JobEnded: {'identifier': 'mecanum_drive_controller', 'rc': 'SIGINT'}
+[7.163666] (-) EventReactorShutdown: {}

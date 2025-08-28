@@ -1,0 +1,369 @@
+[0.000000] (-) TimerEvent: {}
+[0.001794] (diff_drive_controller) JobQueued: {'identifier': 'diff_drive_controller', 'dependencies': OrderedDict()}
+[0.001963] (sub_rsp) JobQueued: {'identifier': 'sub_rsp', 'dependencies': OrderedDict()}
+[0.002000] (diffdrive_arduino) JobQueued: {'identifier': 'diffdrive_arduino', 'dependencies': OrderedDict([('diff_drive_controller', '/home/nwhit210/sub_ws/install/diff_drive_controller')])}
+[0.002080] (diff_drive_controller) JobStarted: {'identifier': 'diff_drive_controller'}
+[0.009878] (sub_rsp) JobStarted: {'identifier': 'sub_rsp'}
+[0.018542] (diff_drive_controller) JobProgress: {'identifier': 'diff_drive_controller', 'progress': 'cmake'}
+[0.021074] (diff_drive_controller) Command: {'cmd': ['/usr/bin/cmake', '/home/nwhit210/sub_ws/src/diff_drive_controller', '-DCMAKE_INSTALL_PREFIX=/home/nwhit210/sub_ws/install/diff_drive_controller'], 'cwd': '/home/nwhit210/sub_ws/build/diff_drive_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'nwhit210'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('WT_PROFILE_ID', '{4ff56d04-d9cf-57ea-bae2-ad396374e7e3}'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/nwhit210'), ('OLDPWD', '/home/nwhit210'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/nwhit210/sub_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'nwhit210'), ('NAME', 'nwhit210'), ('WSL_INTEROP', '/run/WSL/426_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Python312/Scripts/:/mnt/c/Python312/:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/VMware/VMware Workstation/bin/:/mnt/c/Program Files (x86)/Razer/ChromaBroadcast/bin:/mnt/c/Program Files/Razer/ChromaBroadcast/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Windows/system32/config/systemprofile/AppData/Local/Microsoft/WindowsApps:/mnt/c/Gradle/gradle-8.10.1/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/VSCodium/bin:/mnt/c/Program Files/Tailscale/:/mnt/c/apache-maven-3.9.9/bin:/mnt/c/Program Files/Java/jdk-22/bin:/mnt/c/Program Files/nodejs/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Calibre2/:/mnt/c/Users/Whitehouse_Noah/AppData/Roaming/Python/Python312/Scripts:/mnt/c/Program Files/usbipd-win/:/mnt/c/Users/Whitehouse_Noah/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Whitehouse_Noah/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Whitehouse_Noah/AppData/Roaming/npm:/mnt/c/Users/Whitehouse_Noah/.lmstudio/bin:/mnt/c/Program Files (x86)/Nmap:/mnt/c/Users/Whitehouse_Noah/AppData/Local/GitHubDesktop/bin:/snap/bin'), ('WT_SESSION', 'eff38f02-e4b3-43c7-bc8d-997535463950'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/nwhit210/sub_ws/install/sub_rsp:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/nwhit210/sub_ws/build/diff_drive_controller'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/nwhit210/sub_ws/install/sub_rsp:/opt/ros/humble'), ('WSLENV', 'WT_SESSION:WT_PROFILE_ID:')]), 'shell': False}
+[0.029798] (sub_rsp) JobProgress: {'identifier': 'sub_rsp', 'progress': 'cmake'}
+[0.032266] (sub_rsp) JobProgress: {'identifier': 'sub_rsp', 'progress': 'build'}
+[0.033316] (sub_rsp) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nwhit210/sub_ws/build/sub_rsp', '--', '-j8', '-l8'], 'cwd': '/home/nwhit210/sub_ws/build/sub_rsp', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'nwhit210'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('WT_PROFILE_ID', '{4ff56d04-d9cf-57ea-bae2-ad396374e7e3}'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/nwhit210'), ('OLDPWD', '/home/nwhit210'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/nwhit210/sub_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'nwhit210'), ('NAME', 'nwhit210'), ('WSL_INTEROP', '/run/WSL/426_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Python312/Scripts/:/mnt/c/Python312/:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/VMware/VMware Workstation/bin/:/mnt/c/Program Files (x86)/Razer/ChromaBroadcast/bin:/mnt/c/Program Files/Razer/ChromaBroadcast/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Windows/system32/config/systemprofile/AppData/Local/Microsoft/WindowsApps:/mnt/c/Gradle/gradle-8.10.1/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/VSCodium/bin:/mnt/c/Program Files/Tailscale/:/mnt/c/apache-maven-3.9.9/bin:/mnt/c/Program Files/Java/jdk-22/bin:/mnt/c/Program Files/nodejs/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Calibre2/:/mnt/c/Users/Whitehouse_Noah/AppData/Roaming/Python/Python312/Scripts:/mnt/c/Program Files/usbipd-win/:/mnt/c/Users/Whitehouse_Noah/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Whitehouse_Noah/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Whitehouse_Noah/AppData/Roaming/npm:/mnt/c/Users/Whitehouse_Noah/.lmstudio/bin:/mnt/c/Program Files (x86)/Nmap:/mnt/c/Users/Whitehouse_Noah/AppData/Local/GitHubDesktop/bin:/snap/bin'), ('WT_SESSION', 'eff38f02-e4b3-43c7-bc8d-997535463950'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/nwhit210/sub_ws/install/sub_rsp:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/nwhit210/sub_ws/build/sub_rsp'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/nwhit210/sub_ws/install/sub_rsp:/opt/ros/humble'), ('WSLENV', 'WT_SESSION:WT_PROFILE_ID:')]), 'shell': False}
+[0.099293] (-) TimerEvent: {}
+[0.145948] (sub_rsp) CommandEnded: {'returncode': 0}
+[0.147295] (sub_rsp) JobProgress: {'identifier': 'sub_rsp', 'progress': 'install'}
+[0.156772] (sub_rsp) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/nwhit210/sub_ws/build/sub_rsp'], 'cwd': '/home/nwhit210/sub_ws/build/sub_rsp', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'nwhit210'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('WT_PROFILE_ID', '{4ff56d04-d9cf-57ea-bae2-ad396374e7e3}'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/nwhit210'), ('OLDPWD', '/home/nwhit210'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/nwhit210/sub_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'nwhit210'), ('NAME', 'nwhit210'), ('WSL_INTEROP', '/run/WSL/426_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Python312/Scripts/:/mnt/c/Python312/:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/VMware/VMware Workstation/bin/:/mnt/c/Program Files (x86)/Razer/ChromaBroadcast/bin:/mnt/c/Program Files/Razer/ChromaBroadcast/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Windows/system32/config/systemprofile/AppData/Local/Microsoft/WindowsApps:/mnt/c/Gradle/gradle-8.10.1/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/VSCodium/bin:/mnt/c/Program Files/Tailscale/:/mnt/c/apache-maven-3.9.9/bin:/mnt/c/Program Files/Java/jdk-22/bin:/mnt/c/Program Files/nodejs/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Calibre2/:/mnt/c/Users/Whitehouse_Noah/AppData/Roaming/Python/Python312/Scripts:/mnt/c/Program Files/usbipd-win/:/mnt/c/Users/Whitehouse_Noah/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Whitehouse_Noah/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Whitehouse_Noah/AppData/Roaming/npm:/mnt/c/Users/Whitehouse_Noah/.lmstudio/bin:/mnt/c/Program Files (x86)/Nmap:/mnt/c/Users/Whitehouse_Noah/AppData/Local/GitHubDesktop/bin:/snap/bin'), ('WT_SESSION', 'eff38f02-e4b3-43c7-bc8d-997535463950'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/nwhit210/sub_ws/install/sub_rsp:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/nwhit210/sub_ws/build/sub_rsp'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/nwhit210/sub_ws/install/sub_rsp:/opt/ros/humble'), ('WSLENV', 'WT_SESSION:WT_PROFILE_ID:')]), 'shell': False}
+[0.165558] (sub_rsp) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.165970] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/config\n'}
+[0.166075] (sub_rsp) StdoutLine: {'line': b'-- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/config/my_controllers.yaml\n'}
+[0.167150] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/config/empty.yaml\n'}
+[0.167321] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/config/joystick.yaml\n'}
+[0.167365] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/config/sim.yaml\n'}
+[0.167402] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description\n'}
+[0.167437] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/robot.urdf.xacro\n'}
+[0.167523] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/ros2_control.xacro\n'}
+[0.167568] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/sensors\n'}
+[0.167605] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/sensors/camera.xacro\n'}
+[0.168166] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/urdf\n'}
+[0.168514] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/urdf/sub_1.gazebo\n'}
+[0.168839] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/urdf/materials.xacro\n'}
+[0.168983] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/urdf/sub_1.trans\n'}
+[0.169085] (sub_rsp) StdoutLine: {'line': b'-- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/urdf/sub_1.xacro\n'}
+[0.169817] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/meshes\n'}
+[0.170211] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/meshes/frlm_top_1.stl\n'}
+[0.170339] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/meshes/frrm_base_1.stl\n'}
+[0.170384] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/meshes/rrm_base_1.stl\n'}
+[0.170436] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/meshes/frrm_top_1.stl\n'}
+[0.170477] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/meshes/frm_top_1.stl\n'}
+[0.170703] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/meshes/frm_base_1.stl\n'}
+[0.170912] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/meshes/flm_base_1.stl\n'}
+[0.171071] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/meshes/rlm_top_1.stl\n'}
+[0.171184] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/meshes/rlm_base_1.stl\n'}
+[0.176518] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/meshes/frm_top_2.stl\n'}
+[0.176713] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/meshes/frlm_base_1.stl\n'}
+[0.176809] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/meshes/middle_plate_1.stl\n'}
+[0.176860] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/meshes/base_link.stl\n'}
+[0.176921] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/meshes/frlm_bracket_1.stl\n'}
+[0.176970] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/meshes/frrm_bracket_1.stl\n'}
+[0.177017] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/meshes/rrm_top_1.stl\n'}
+[0.177055] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/meshes/flm_top_1.stl\n'}
+[0.177091] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/launch\n'}
+[0.177131] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/launch/launch_bot.launch.py\n'}
+[0.177166] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/launch/launch_sim.launch.py\n'}
+[0.177200] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/launch/joint_pub.launch.py\n'}
+[0.177416] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/launch/__pycache__\n'}
+[0.177541] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/launch/__pycache__/launch_sim.cpython-310.pyc\n'}
+[0.177634] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/launch/__pycache__/launch.cpython-310.pyc\n'}
+[0.177720] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/launch/rsp.launch.py\n'}
+[0.177803] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/launch/joystick.launch.py\n'}
+[0.177888] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/worlds\n'}
+[0.178121] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/worlds/empty.world\n'}
+[0.178220] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/ament_index/resource_index/package_run_dependencies/sub_rsp\n'}
+[0.178309] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/ament_index/resource_index/parent_prefix_path/sub_rsp\n'}
+[0.181886] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/environment/ament_prefix_path.sh\n'}
+[0.182098] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/environment/ament_prefix_path.dsv\n'}
+[0.182211] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/environment/path.sh\n'}
+[0.182310] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/environment/path.dsv\n'}
+[0.185365] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/local_setup.bash\n'}
+[0.186191] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/local_setup.sh\n'}
+[0.187220] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/local_setup.zsh\n'}
+[0.187493] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/local_setup.dsv\n'}
+[0.187766] (sub_rsp) StdoutLine: {'line': b'-- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/package.dsv\n'}
+[0.188031] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/ament_index/resource_index/packages/sub_rsp\n'}
+[0.188216] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/cmake/sub_rspConfig.cmake\n'}
+[0.188450] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/cmake/sub_rspConfig-version.cmake\n'}
+[0.188743] (sub_rsp) StdoutLine: {'line': b'-- Up-to-date: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/package.xml\n'}
+[0.189015] (sub_rsp) CommandEnded: {'returncode': 0}
+[0.199803] (-) TimerEvent: {}
+[0.216543] (sub_rsp) JobEnded: {'identifier': 'sub_rsp', 'rc': 0}
+[0.299956] (-) TimerEvent: {}
+[0.400384] (-) TimerEvent: {}
+[0.500920] (-) TimerEvent: {}
+[0.518020] (diff_drive_controller) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.601086] (-) TimerEvent: {}
+[0.701517] (-) TimerEvent: {}
+[0.801982] (-) TimerEvent: {}
+[0.902502] (-) TimerEvent: {}
+[1.003030] (-) TimerEvent: {}
+[1.103536] (-) TimerEvent: {}
+[1.204116] (-) TimerEvent: {}
+[1.304691] (-) TimerEvent: {}
+[1.385769] (diff_drive_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.404943] (-) TimerEvent: {}
+[1.505406] (-) TimerEvent: {}
+[1.605962] (-) TimerEvent: {}
+[1.706466] (-) TimerEvent: {}
+[1.728906] (diff_drive_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.738831] (diff_drive_controller) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.739619] (diff_drive_controller) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.740688] (diff_drive_controller) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.764769] (diff_drive_controller) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.806636] (-) TimerEvent: {}
+[1.907208] (-) TimerEvent: {}
+[1.930152] (diff_drive_controller) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[2.007395] (-) TimerEvent: {}
+[2.081227] (diff_drive_controller) StdoutLine: {'line': b'-- Found controller_interface: 2.50.0 (/opt/ros/humble/share/controller_interface/cmake)\n'}
+[2.107712] (-) TimerEvent: {}
+[2.208189] (-) TimerEvent: {}
+[2.308625] (-) TimerEvent: {}
+[2.409071] (-) TimerEvent: {}
+[2.506133] (diff_drive_controller) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[2.509233] (-) TimerEvent: {}
+[2.517517] (diff_drive_controller) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.546474] (diff_drive_controller) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[2.573801] (diff_drive_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.609425] (-) TimerEvent: {}
+[2.612785] (diff_drive_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.709631] (-) TimerEvent: {}
+[2.810156] (-) TimerEvent: {}
+[2.910651] (-) TimerEvent: {}
+[3.011080] (-) TimerEvent: {}
+[3.111560] (-) TimerEvent: {}
+[3.212012] (-) TimerEvent: {}
+[3.312472] (-) TimerEvent: {}
+[3.412922] (-) TimerEvent: {}
+[3.513408] (-) TimerEvent: {}
+[3.613912] (-) TimerEvent: {}
+[3.714397] (-) TimerEvent: {}
+[3.814885] (-) TimerEvent: {}
+[3.915370] (-) TimerEvent: {}
+[4.015851] (-) TimerEvent: {}
+[4.116365] (-) TimerEvent: {}
+[4.216878] (-) TimerEvent: {}
+[4.317346] (-) TimerEvent: {}
+[4.417836] (-) TimerEvent: {}
+[4.518326] (-) TimerEvent: {}
+[4.618864] (-) TimerEvent: {}
+[4.719347] (-) TimerEvent: {}
+[4.819922] (-) TimerEvent: {}
+[4.920367] (-) TimerEvent: {}
+[5.020864] (-) TimerEvent: {}
+[5.121359] (-) TimerEvent: {}
+[5.221813] (-) TimerEvent: {}
+[5.322269] (-) TimerEvent: {}
+[5.422719] (-) TimerEvent: {}
+[5.523242] (-) TimerEvent: {}
+[5.535626] (diff_drive_controller) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[5.541774] (diff_drive_controller) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[5.598040] (diff_drive_controller) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[5.623434] (-) TimerEvent: {}
+[5.666555] (diff_drive_controller) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[5.672208] (diff_drive_controller) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[5.723594] (-) TimerEvent: {}
+[5.824100] (-) TimerEvent: {}
+[5.924569] (-) TimerEvent: {}
+[6.025048] (-) TimerEvent: {}
+[6.045535] (diff_drive_controller) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[6.050645] (diff_drive_controller) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[6.061729] (diff_drive_controller) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[6.125273] (-) TimerEvent: {}
+[6.225768] (-) TimerEvent: {}
+[6.241040] (diff_drive_controller) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[6.264240] (diff_drive_controller) StdoutLine: {'line': b'-- Looking for C++ include pthread.h\n'}
+[6.325929] (-) TimerEvent: {}
+[6.426437] (-) TimerEvent: {}
+[6.526870] (-) TimerEvent: {}
+[6.627390] (-) TimerEvent: {}
+[6.637616] (diff_drive_controller) StdoutLine: {'line': b'-- Looking for C++ include pthread.h - found\n'}
+[6.638141] (diff_drive_controller) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[6.727613] (-) TimerEvent: {}
+[6.828177] (-) TimerEvent: {}
+[6.912907] (diff_drive_controller) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[6.914481] (diff_drive_controller) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[6.928369] (-) TimerEvent: {}
+[7.026447] (diff_drive_controller) StdoutLine: {'line': b'-- Found generate_parameter_library: 0.4.0 (/opt/ros/humble/share/generate_parameter_library/cmake)\n'}
+[7.028536] (-) TimerEvent: {}
+[7.032416] (diff_drive_controller) StdoutLine: {'line': b'-- Found parameter_traits: 0.4.0 (/opt/ros/humble/share/parameter_traits/cmake)\n'}
+[7.075371] (diff_drive_controller) StdoutLine: {'line': b'-- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[7.115427] (diff_drive_controller) StdoutLine: {'line': b'-- Found realtime_tools: 2.13.0 (/opt/ros/humble/share/realtime_tools/cmake)\n'}
+[7.128763] (-) TimerEvent: {}
+[7.148915] (diff_drive_controller) StdoutLine: {'line': b'-- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)\n'}
+[7.160485] (diff_drive_controller) StdoutLine: {'line': b'-- Found tf2_msgs: 0.25.12 (/opt/ros/humble/share/tf2_msgs/cmake)\n'}
+[7.212728] (diff_drive_controller) StdoutLine: {'line': b'-- Found ament_cmake_gmock: 1.3.11 (/opt/ros/humble/share/ament_cmake_gmock/cmake)\n'}
+[7.218393] (diff_drive_controller) StdoutLine: {'line': b'-- Found controller_manager: 2.50.0 (/opt/ros/humble/share/controller_manager/cmake)\n'}
+[7.228959] (-) TimerEvent: {}
+[7.265437] (diff_drive_controller) StdoutLine: {'line': b'-- Found ros2_control_test_assets: 2.50.0 (/opt/ros/humble/share/ros2_control_test_assets/cmake)\n'}
+[7.273229] (diff_drive_controller) StdoutLine: {'line': b"-- Found gmock sources under '/opt/ros/humble/src/gmock_vendor': C++ tests using 'Google Mock' will be built\n"}
+[7.329153] (-) TimerEvent: {}
+[7.429648] (-) TimerEvent: {}
+[7.530101] (-) TimerEvent: {}
+[7.557360] (diff_drive_controller) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[7.630245] (-) TimerEvent: {}
+[7.730726] (-) TimerEvent: {}
+[7.831177] (-) TimerEvent: {}
+[7.931649] (-) TimerEvent: {}
+[8.032258] (-) TimerEvent: {}
+[8.132707] (-) TimerEvent: {}
+[8.233195] (-) TimerEvent: {}
+[8.308108] (diff_drive_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[8.333374] (-) TimerEvent: {}
+[8.433862] (-) TimerEvent: {}
+[8.534320] (-) TimerEvent: {}
+[8.600500] (diff_drive_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[8.610717] (diff_drive_controller) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[8.611350] (diff_drive_controller) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[8.611833] (diff_drive_controller) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[8.621485] (diff_drive_controller) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 1.3.11 (/opt/ros/humble/share/ament_cmake_gtest/cmake)\n'}
+[8.625717] (diff_drive_controller) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[8.634484] (-) TimerEvent: {}
+[8.734937] (-) TimerEvent: {}
+[8.741531] (diff_drive_controller) StdoutLine: {'line': b'-- Configuring done\n'}
+[8.835096] (-) TimerEvent: {}
+[8.901314] (diff_drive_controller) StdoutLine: {'line': b'-- Generating done\n'}
+[8.915518] (diff_drive_controller) StdoutLine: {'line': b'-- Build files have been written to: /home/nwhit210/sub_ws/build/diff_drive_controller\n'}
+[8.931716] (diff_drive_controller) CommandEnded: {'returncode': 0}
+[8.933963] (diff_drive_controller) JobProgress: {'identifier': 'diff_drive_controller', 'progress': 'build'}
+[8.934077] (diff_drive_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nwhit210/sub_ws/build/diff_drive_controller', '--', '-j8', '-l8'], 'cwd': '/home/nwhit210/sub_ws/build/diff_drive_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'nwhit210'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('WT_PROFILE_ID', '{4ff56d04-d9cf-57ea-bae2-ad396374e7e3}'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/nwhit210'), ('OLDPWD', '/home/nwhit210'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/nwhit210/sub_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'nwhit210'), ('NAME', 'nwhit210'), ('WSL_INTEROP', '/run/WSL/426_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Python312/Scripts/:/mnt/c/Python312/:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Program Files (x86)/VMware/VMware Workstation/bin/:/mnt/c/Program Files (x86)/Razer/ChromaBroadcast/bin:/mnt/c/Program Files/Razer/ChromaBroadcast/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Windows/system32/config/systemprofile/AppData/Local/Microsoft/WindowsApps:/mnt/c/Gradle/gradle-8.10.1/bin:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/VSCodium/bin:/mnt/c/Program Files/Tailscale/:/mnt/c/apache-maven-3.9.9/bin:/mnt/c/Program Files/Java/jdk-22/bin:/mnt/c/Program Files/nodejs/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Calibre2/:/mnt/c/Users/Whitehouse_Noah/AppData/Roaming/Python/Python312/Scripts:/mnt/c/Program Files/usbipd-win/:/mnt/c/Users/Whitehouse_Noah/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Whitehouse_Noah/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Whitehouse_Noah/AppData/Roaming/npm:/mnt/c/Users/Whitehouse_Noah/.lmstudio/bin:/mnt/c/Program Files (x86)/Nmap:/mnt/c/Users/Whitehouse_Noah/AppData/Local/GitHubDesktop/bin:/snap/bin'), ('WT_SESSION', 'eff38f02-e4b3-43c7-bc8d-997535463950'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/nwhit210/sub_ws/install/sub_rsp:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/nwhit210/sub_ws/build/diff_drive_controller'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/nwhit210/sub_ws/install/sub_rsp:/opt/ros/humble'), ('WSLENV', 'WT_SESSION:WT_PROFILE_ID:')]), 'shell': False}
+[8.935206] (-) TimerEvent: {}
+[8.978383] (diff_drive_controller) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mRunning `/opt/ros/humble/bin/generate_parameter_library_cpp /home/nwhit210/sub_ws/build/diff_drive_controller/include/diff_drive_controller/diff_drive_controller_parameters.hpp /home/nwhit210/sub_ws/src/diff_drive_controller/src/diff_drive_controller_parameter.yaml `\x1b[0m\n'}
+[8.980375] (diff_drive_controller) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding CXX object gmock/CMakeFiles/gmock.dir/opt/ros/humble/src/gtest_vendor/src/gtest-all.cc.o\x1b[0m\n'}
+[8.981095] (diff_drive_controller) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object gmock/CMakeFiles/gmock.dir/src/gmock-all.cc.o\x1b[0m\n'}
+[8.983626] (diff_drive_controller) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object gmock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o\x1b[0m\n'}
+[9.035335] (-) TimerEvent: {}
+[9.135663] (-) TimerEvent: {}
+[9.236011] (-) TimerEvent: {}
+[9.336383] (-) TimerEvent: {}
+[9.436763] (-) TimerEvent: {}
+[9.537185] (-) TimerEvent: {}
+[9.637582] (-) TimerEvent: {}
+[9.737946] (-) TimerEvent: {}
+[9.838262] (-) TimerEvent: {}
+[9.938692] (-) TimerEvent: {}
+[10.039169] (-) TimerEvent: {}
+[10.139531] (-) TimerEvent: {}
+[10.239947] (-) TimerEvent: {}
+[10.295681] (diff_drive_controller) StdoutLine: {'line': b'[ 33%] \x1b[34m\x1b[1mCreating deprecated header file /home/nwhit210/sub_ws/build/diff_drive_controller/include/diff_drive_controller_parameters.hpp\x1b[0m\n'}
+[10.340084] (-) TimerEvent: {}
+[10.349279] (diff_drive_controller) StdoutLine: {'line': b'[ 33%] Built target diff_drive_controller_parameters\n'}
+[10.366385] (diff_drive_controller) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/diff_drive_controller.dir/src/diff_drive_controller.cpp.o\x1b[0m\n'}
+[10.376403] (diff_drive_controller) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/diff_drive_controller.dir/src/odometry.cpp.o\x1b[0m\n'}
+[10.385702] (diff_drive_controller) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/diff_drive_controller.dir/src/speed_limiter.cpp.o\x1b[0m\n'}
+[10.440229] (-) TimerEvent: {}
+[10.540653] (-) TimerEvent: {}
+[10.641018] (-) TimerEvent: {}
+[10.741355] (-) TimerEvent: {}
+[10.841793] (-) TimerEvent: {}
+[10.942197] (-) TimerEvent: {}
+[11.042631] (-) TimerEvent: {}
+[11.143077] (-) TimerEvent: {}
+[11.205617] (diff_drive_controller) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking CXX static library libgmock_main.a\x1b[0m\n'}
+[11.243257] (-) TimerEvent: {}
+[11.335692] (diff_drive_controller) StdoutLine: {'line': b'[ 60%] Built target gmock_main\n'}
+[11.343404] (-) TimerEvent: {}
+[11.443854] (-) TimerEvent: {}
+[11.544287] (-) TimerEvent: {}
+[11.644651] (-) TimerEvent: {}
+[11.745053] (-) TimerEvent: {}
+[11.845552] (-) TimerEvent: {}
+[11.945977] (-) TimerEvent: {}
+[12.046386] (-) TimerEvent: {}
+[12.146871] (-) TimerEvent: {}
+[12.247326] (-) TimerEvent: {}
+[12.347769] (-) TimerEvent: {}
+[12.448146] (-) TimerEvent: {}
+[12.548642] (-) TimerEvent: {}
+[12.649061] (-) TimerEvent: {}
+[12.749518] (-) TimerEvent: {}
+[12.849910] (-) TimerEvent: {}
+[12.950341] (-) TimerEvent: {}
+[13.050788] (-) TimerEvent: {}
+[13.151171] (-) TimerEvent: {}
+[13.251547] (-) TimerEvent: {}
+[13.351923] (-) TimerEvent: {}
+[13.452311] (-) TimerEvent: {}
+[13.552703] (-) TimerEvent: {}
+[13.653100] (-) TimerEvent: {}
+[13.738168] (diff_drive_controller) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX static library libgmock.a\x1b[0m\n'}
+[13.753392] (-) TimerEvent: {}
+[13.809074] (diff_drive_controller) StdoutLine: {'line': b'[ 66%] Built target gmock\n'}
+[13.832396] (diff_drive_controller) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/test_load_diff_drive_controller.dir/test/test_load_diff_drive_controller.cpp.o\x1b[0m\n'}
+[13.853603] (-) TimerEvent: {}
+[13.954022] (-) TimerEvent: {}
+[14.054539] (-) TimerEvent: {}
+[14.154953] (-) TimerEvent: {}
+[14.255657] (-) TimerEvent: {}
+[14.356163] (-) TimerEvent: {}
+[14.456662] (-) TimerEvent: {}
+[14.557173] (-) TimerEvent: {}
+[14.657654] (-) TimerEvent: {}
+[14.758137] (-) TimerEvent: {}
+[14.858630] (-) TimerEvent: {}
+[14.959118] (-) TimerEvent: {}
+[15.059677] (-) TimerEvent: {}
+[15.160254] (-) TimerEvent: {}
+[15.260804] (-) TimerEvent: {}
+[15.361354] (-) TimerEvent: {}
+[15.461855] (-) TimerEvent: {}
+[15.562342] (-) TimerEvent: {}
+[15.662878] (-) TimerEvent: {}
+[15.763554] (-) TimerEvent: {}
+[15.864218] (-) TimerEvent: {}
+[15.964826] (-) TimerEvent: {}
+[16.065318] (-) TimerEvent: {}
+[16.165923] (-) TimerEvent: {}
+[16.266441] (-) TimerEvent: {}
+[16.366856] (-) TimerEvent: {}
+[16.467389] (-) TimerEvent: {}
+[16.567994] (-) TimerEvent: {}
+[16.668523] (-) TimerEvent: {}
+[16.769042] (-) TimerEvent: {}
+[16.869615] (-) TimerEvent: {}
+[16.970625] (-) TimerEvent: {}
+[17.071067] (-) TimerEvent: {}
+[17.171529] (-) TimerEvent: {}
+[17.272024] (-) TimerEvent: {}
+[17.372530] (-) TimerEvent: {}
+[17.473025] (-) TimerEvent: {}
+[17.573605] (-) TimerEvent: {}
+[17.674055] (-) TimerEvent: {}
+[17.774526] (-) TimerEvent: {}
+[17.874936] (-) TimerEvent: {}
+[17.975431] (-) TimerEvent: {}
+[18.076105] (-) TimerEvent: {}
+[18.176592] (-) TimerEvent: {}
+[18.277160] (-) TimerEvent: {}
+[18.377623] (-) TimerEvent: {}
+[18.478080] (-) TimerEvent: {}
+[18.578787] (-) TimerEvent: {}
+[18.679309] (-) TimerEvent: {}
+[18.779918] (-) TimerEvent: {}
+[18.880463] (-) TimerEvent: {}
+[18.981081] (-) TimerEvent: {}
+[19.081619] (-) TimerEvent: {}
+[19.182151] (-) TimerEvent: {}
+[19.282673] (-) TimerEvent: {}
+[19.383215] (-) TimerEvent: {}
+[19.483764] (-) TimerEvent: {}
+[19.584220] (-) TimerEvent: {}
+[19.684749] (-) TimerEvent: {}
+[19.785490] (-) TimerEvent: {}
+[19.886116] (-) TimerEvent: {}
+[19.986684] (-) TimerEvent: {}
+[20.087382] (-) TimerEvent: {}
+[20.187929] (-) TimerEvent: {}
+[20.288598] (-) TimerEvent: {}
+[20.389133] (-) TimerEvent: {}
+[20.489651] (-) TimerEvent: {}
+[20.590178] (-) TimerEvent: {}
+[20.690855] (-) TimerEvent: {}
+[20.791358] (-) TimerEvent: {}
+[20.891882] (-) TimerEvent: {}
+[20.992561] (-) TimerEvent: {}
+[21.093130] (-) TimerEvent: {}
+[21.193634] (-) TimerEvent: {}
+[21.294164] (-) TimerEvent: {}
+[21.394716] (-) TimerEvent: {}
+[21.495169] (-) TimerEvent: {}
+[21.595687] (-) TimerEvent: {}
+[21.696250] (-) TimerEvent: {}
+[21.796800] (-) TimerEvent: {}
+[21.862198] (diff_drive_controller) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/test_load_diff_drive_controller.dir/build.make:76: CMakeFiles/test_load_diff_drive_controller.dir/test/test_load_diff_drive_controller.cpp.o] Interrupt\n'}
+[21.862504] (diff_drive_controller) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:261: CMakeFiles/test_load_diff_drive_controller.dir/all] Interrupt\n'}
+[21.862618] (diff_drive_controller) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/diff_drive_controller.dir/build.make:76: CMakeFiles/diff_drive_controller.dir/src/diff_drive_controller.cpp.o] Interrupt\n'}
+[21.864266] (diff_drive_controller) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:206: CMakeFiles/diff_drive_controller.dir/all] Interrupt\n'}
+[21.864527] (diff_drive_controller) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Interrupt\n'}
+[21.892377] (diff_drive_controller) CommandEnded: {'returncode': -2}
+[21.897202] (-) TimerEvent: {}
+[21.902413] (diff_drive_controller) JobEnded: {'identifier': 'diff_drive_controller', 'rc': 'SIGINT'}
+[21.913590] (diffdrive_arduino) JobSkipped: {'identifier': 'diffdrive_arduino'}
+[21.913740] (-) EventReactorShutdown: {}

@@ -1,0 +1,2 @@
+Invoking command in '/home/nwhit210/sub_ws/build/sub_1_description': /usr/bin/cmake /home/nwhit210/sub_ws/src/sub_1_description -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/nwhit210/sub_ws/install/sub_1_description
+Invoked command in '/home/nwhit210/sub_ws/build/sub_1_description' returned '1': /usr/bin/cmake /home/nwhit210/sub_ws/src/sub_1_description -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/nwhit210/sub_ws/install/sub_1_description

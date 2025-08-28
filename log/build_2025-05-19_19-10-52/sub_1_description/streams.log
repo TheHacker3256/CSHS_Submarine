@@ -1,0 +1,41 @@
+[0.021s] Invoking command in '/home/nwhit210/sub_ws/build/sub_1_description': /usr/bin/cmake /home/nwhit210/sub_ws/src/sub_1_description -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/nwhit210/sub_ws/install/sub_1_description
+[0.059s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.059s]   Compatibility with CMake < 2.8.12 will be removed from a future version of
+[0.059s]   CMake.
+[0.059s] 
+[0.059s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[0.059s]   CMake that the project does not need compatibility with older versions.
+[0.059s] 
+[0.059s] [0m
+[0.334s] -- The C compiler identification is GNU 11.4.0
+[1.190s] -- The CXX compiler identification is GNU 11.4.0
+[1.949s] -- Detecting C compiler ABI info
+[2.183s] -- Detecting C compiler ABI info - done
+[2.189s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.190s] -- Detecting C compile features
+[2.190s] -- Detecting C compile features - done
+[2.192s] -- Detecting CXX compiler ABI info
+[2.427s] -- Detecting CXX compiler ABI info - done
+[2.433s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.434s] -- Detecting CXX compile features
+[2.434s] -- Detecting CXX compile features - done
+[5.092s] [31mCMake Error at CMakeLists.txt:10 (find_package):
+[5.093s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[5.093s]   asked CMake to find a package configuration file provided by "catkin", but
+[5.093s]   CMake did not find one.
+[5.093s] 
+[5.093s]   Could not find a package configuration file provided by "catkin" with any
+[5.093s]   of the following names:
+[5.093s] 
+[5.093s]     catkinConfig.cmake
+[5.093s]     catkin-config.cmake
+[5.093s] 
+[5.093s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[5.094s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[5.094s]   provides a separate development package or SDK, be sure it has been
+[5.094s]   installed.
+[5.094s] 
+[5.094s] [0m
+[5.094s] -- Configuring incomplete, errors occurred!
+[5.094s] See also "/home/nwhit210/sub_ws/build/sub_1_description/CMakeFiles/CMakeOutput.log".
+[5.097s] Invoked command in '/home/nwhit210/sub_ws/build/sub_1_description' returned '1': /usr/bin/cmake /home/nwhit210/sub_ws/src/sub_1_description -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/nwhit210/sub_ws/install/sub_1_description

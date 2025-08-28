@@ -1,0 +1,72 @@
+[0.026s] Invoking command in '/home/nwhit210/sub_ws/build/diff_drive_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/nwhit210/sub_ws/src/diff_drive_controller -DCMAKE_INSTALL_PREFIX=/home/nwhit210/sub_ws/install/diff_drive_controller
+[0.516s] -- The CXX compiler identification is GNU 11.4.0
+[1.384s] -- Detecting CXX compiler ABI info
+[1.727s] -- Detecting CXX compiler ABI info - done
+[1.737s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.738s] -- Detecting CXX compile features
+[1.739s] -- Detecting CXX compile features - done
+[1.763s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.928s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.079s] -- Found controller_interface: 2.50.0 (/opt/ros/humble/share/controller_interface/cmake)
+[2.504s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.516s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.545s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.572s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.611s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.534s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[5.540s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[5.596s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[5.665s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[5.670s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[6.044s] -- Found FastRTPS: /opt/ros/humble/include  
+[6.049s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[6.060s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[6.239s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[6.262s] -- Looking for C++ include pthread.h
+[6.636s] -- Looking for C++ include pthread.h - found
+[6.636s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[6.911s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[6.913s] -- Found Threads: TRUE  
+[7.025s] -- Found generate_parameter_library: 0.4.0 (/opt/ros/humble/share/generate_parameter_library/cmake)
+[7.031s] -- Found parameter_traits: 0.4.0 (/opt/ros/humble/share/parameter_traits/cmake)
+[7.074s] -- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[7.114s] -- Found realtime_tools: 2.13.0 (/opt/ros/humble/share/realtime_tools/cmake)
+[7.147s] -- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)
+[7.159s] -- Found tf2_msgs: 0.25.12 (/opt/ros/humble/share/tf2_msgs/cmake)
+[7.211s] -- Found ament_cmake_gmock: 1.3.11 (/opt/ros/humble/share/ament_cmake_gmock/cmake)
+[7.216s] -- Found controller_manager: 2.50.0 (/opt/ros/humble/share/controller_manager/cmake)
+[7.264s] -- Found ros2_control_test_assets: 2.50.0 (/opt/ros/humble/share/ros2_control_test_assets/cmake)
+[7.271s] -- Found gmock sources under '/opt/ros/humble/src/gmock_vendor': C++ tests using 'Google Mock' will be built
+[7.555s] -- The C compiler identification is GNU 11.4.0
+[8.306s] -- Detecting C compiler ABI info
+[8.599s] -- Detecting C compiler ABI info - done
+[8.609s] -- Check for working C compiler: /usr/bin/cc - skipped
+[8.609s] -- Detecting C compile features
+[8.610s] -- Detecting C compile features - done
+[8.620s] -- Found ament_cmake_gtest: 1.3.11 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[8.624s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[8.740s] -- Configuring done
+[8.899s] -- Generating done
+[8.914s] -- Build files have been written to: /home/nwhit210/sub_ws/build/diff_drive_controller
+[8.930s] Invoked command in '/home/nwhit210/sub_ws/build/diff_drive_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/nwhit210/sub_ws/src/diff_drive_controller -DCMAKE_INSTALL_PREFIX=/home/nwhit210/sub_ws/install/diff_drive_controller
+[8.932s] Invoking command in '/home/nwhit210/sub_ws/build/diff_drive_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/nwhit210/sub_ws/build/diff_drive_controller -- -j8 -l8
+[8.976s] [  6%] [34m[1mRunning `/opt/ros/humble/bin/generate_parameter_library_cpp /home/nwhit210/sub_ws/build/diff_drive_controller/include/diff_drive_controller/diff_drive_controller_parameters.hpp /home/nwhit210/sub_ws/src/diff_drive_controller/src/diff_drive_controller_parameter.yaml `[0m
+[8.978s] [ 13%] [32mBuilding CXX object gmock/CMakeFiles/gmock.dir/opt/ros/humble/src/gtest_vendor/src/gtest-all.cc.o[0m
+[8.979s] [ 20%] [32mBuilding CXX object gmock/CMakeFiles/gmock.dir/src/gmock-all.cc.o[0m
+[8.982s] [ 26%] [32mBuilding CXX object gmock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o[0m
+[10.294s] [ 33%] [34m[1mCreating deprecated header file /home/nwhit210/sub_ws/build/diff_drive_controller/include/diff_drive_controller_parameters.hpp[0m
+[10.347s] [ 33%] Built target diff_drive_controller_parameters
+[10.364s] [ 40%] [32mBuilding CXX object CMakeFiles/diff_drive_controller.dir/src/diff_drive_controller.cpp.o[0m
+[10.375s] [ 46%] [32mBuilding CXX object CMakeFiles/diff_drive_controller.dir/src/odometry.cpp.o[0m
+[10.384s] [ 53%] [32mBuilding CXX object CMakeFiles/diff_drive_controller.dir/src/speed_limiter.cpp.o[0m
+[11.204s] [ 60%] [32m[1mLinking CXX static library libgmock_main.a[0m
+[11.334s] [ 60%] Built target gmock_main
+[13.736s] [ 66%] [32m[1mLinking CXX static library libgmock.a[0m
+[13.807s] [ 66%] Built target gmock
+[13.830s] [ 73%] [32mBuilding CXX object CMakeFiles/test_load_diff_drive_controller.dir/test/test_load_diff_drive_controller.cpp.o[0m
+[21.860s] gmake[2]: *** [CMakeFiles/test_load_diff_drive_controller.dir/build.make:76: CMakeFiles/test_load_diff_drive_controller.dir/test/test_load_diff_drive_controller.cpp.o] Interrupt
+[21.860s] gmake[1]: *** [CMakeFiles/Makefile2:261: CMakeFiles/test_load_diff_drive_controller.dir/all] Interrupt
+[21.861s] gmake[2]: *** [CMakeFiles/diff_drive_controller.dir/build.make:76: CMakeFiles/diff_drive_controller.dir/src/diff_drive_controller.cpp.o] Interrupt
+[21.862s] gmake[1]: *** [CMakeFiles/Makefile2:206: CMakeFiles/diff_drive_controller.dir/all] Interrupt
+[21.863s] gmake: *** [Makefile:146: all] Interrupt
+[21.891s] Invoked command in '/home/nwhit210/sub_ws/build/diff_drive_controller' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/nwhit210/sub_ws/build/diff_drive_controller -- -j8 -l8

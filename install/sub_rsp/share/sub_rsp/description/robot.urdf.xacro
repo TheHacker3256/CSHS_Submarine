@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro"  name="robot">
+  <xacro:arg name='sim_mode' default='true'/>
+
+    <xacro:include filename="./urdf/sub_1.xacro" />
+    
+    <xacro:include filename="ros2_control.xacro" />
+
+    <!-- <xacro:include filename="sensors/camera.xacro" /> add camera -->
+</robot>

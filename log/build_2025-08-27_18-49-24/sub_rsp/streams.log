@@ -1,0 +1,88 @@
+[0.035s] Invoking command in '/home/nwhit210/sub_ws/build/sub_rsp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/nwhit210/sub_ws/src/sub_rsp -DCMAKE_INSTALL_PREFIX=/home/nwhit210/sub_ws/install/sub_rsp
+[0.464s] -- The C compiler identification is GNU 11.4.0
+[2.281s] -- The CXX compiler identification is GNU 11.4.0
+[3.051s] -- Detecting C compiler ABI info
+[3.499s] -- Detecting C compiler ABI info - done
+[3.508s] -- Check for working C compiler: /usr/bin/cc - skipped
+[3.511s] -- Detecting C compile features
+[3.513s] -- Detecting C compile features - done
+[3.519s] -- Detecting CXX compiler ABI info
+[3.854s] -- Detecting CXX compiler ABI info - done
+[3.864s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.865s] -- Detecting CXX compile features
+[3.867s] -- Detecting CXX compile features - done
+[3.889s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[4.091s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[4.270s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.393s] -- Added test 'copyright' to check source files copyright and LICENSE
+[4.399s] -- Added test 'flake8' to check Python code syntax and style conventions
+[4.401s] -- Added test 'lint_cmake' to check CMake code style
+[4.403s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[4.408s] -- Added test 'xmllint' to check XML markup files
+[4.412s] -- Configuring done
+[4.420s] -- Generating done
+[4.424s] -- Build files have been written to: /home/nwhit210/sub_ws/build/sub_rsp
+[4.432s] Invoked command in '/home/nwhit210/sub_ws/build/sub_rsp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/nwhit210/sub_ws/src/sub_rsp -DCMAKE_INSTALL_PREFIX=/home/nwhit210/sub_ws/install/sub_rsp
+[4.435s] Invoking command in '/home/nwhit210/sub_ws/build/sub_rsp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/nwhit210/sub_ws/build/sub_rsp -- -j8 -l8
+[4.479s] Invoked command in '/home/nwhit210/sub_ws/build/sub_rsp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/nwhit210/sub_ws/build/sub_rsp -- -j8 -l8
+[4.489s] Invoking command in '/home/nwhit210/sub_ws/build/sub_rsp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/nwhit210/sub_ws/build/sub_rsp
+[4.498s] -- Install configuration: ""
+[4.498s] -- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/config
+[4.500s] -- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/config/my_controllers.yaml
+[4.500s] -- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/config/joystick.yaml
+[4.502s] -- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/config/sim.yaml
+[4.503s] -- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description
+[4.504s] -- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/robot.urdf.xacro
+[4.504s] -- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/ros2_control.xacro
+[4.505s] -- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/sensors
+[4.505s] -- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/sensors/camera.xacro
+[4.506s] -- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/urdf
+[4.506s] -- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/urdf/sub_1.gazebo
+[4.507s] -- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/urdf/materials.xacro
+[4.508s] -- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/urdf/sub_1.trans
+[4.508s] -- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/urdf/sub_1.xacro
+[4.509s] -- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/meshes
+[4.509s] -- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/meshes/frlm_top_1.stl
+[4.510s] -- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/meshes/frrm_base_1.stl
+[4.512s] -- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/meshes/rrm_base_1.stl
+[4.513s] -- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/meshes/frrm_top_1.stl
+[4.514s] -- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/meshes/frm_top_1.stl
+[4.515s] -- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/meshes/frm_base_1.stl
+[4.516s] -- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/meshes/flm_base_1.stl
+[4.518s] -- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/meshes/rlm_top_1.stl
+[4.519s] -- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/meshes/rlm_base_1.stl
+[4.520s] -- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/meshes/frm_top_2.stl
+[4.522s] -- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/meshes/frlm_base_1.stl
+[4.523s] -- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/meshes/middle_plate_1.stl
+[4.525s] -- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/meshes/base_link.stl
+[4.526s] -- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/meshes/frlm_bracket_1.stl
+[4.527s] -- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/meshes/frrm_bracket_1.stl
+[4.529s] -- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/meshes/rrm_top_1.stl
+[4.530s] -- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/description/meshes/flm_top_1.stl
+[4.531s] -- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/launch
+[4.531s] -- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/launch/launch_bot.launch.py
+[4.532s] -- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/launch/launch_sim.launch.py
+[4.532s] -- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/launch/joint_pub.launch.py
+[4.533s] -- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/launch/__pycache__
+[4.533s] -- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/launch/__pycache__/launch_sim.cpython-310.pyc
+[4.534s] -- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/launch/__pycache__/launch.cpython-310.pyc
+[4.534s] -- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/launch/rsp.launch.py
+[4.535s] -- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/launch/joystick.launch.py
+[4.535s] -- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/worlds
+[4.535s] -- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/worlds/empty.world
+[4.537s] -- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/ament_index/resource_index/package_run_dependencies/sub_rsp
+[4.537s] -- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/ament_index/resource_index/parent_prefix_path/sub_rsp
+[4.538s] -- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/environment/ament_prefix_path.sh
+[4.538s] -- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/environment/ament_prefix_path.dsv
+[4.538s] -- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/environment/path.sh
+[4.538s] -- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/environment/path.dsv
+[4.539s] -- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/local_setup.bash
+[4.539s] -- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/local_setup.sh
+[4.539s] -- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/local_setup.zsh
+[4.539s] -- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/local_setup.dsv
+[4.539s] -- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/package.dsv
+[4.540s] -- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/ament_index/resource_index/packages/sub_rsp
+[4.540s] -- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/cmake/sub_rspConfig.cmake
+[4.541s] -- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/cmake/sub_rspConfig-version.cmake
+[4.541s] -- Installing: /home/nwhit210/sub_ws/install/sub_rsp/share/sub_rsp/package.xml
+[4.544s] Invoked command in '/home/nwhit210/sub_ws/build/sub_rsp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/nwhit210/sub_ws/build/sub_rsp
