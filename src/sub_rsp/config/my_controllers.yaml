@@ -1,6 +1,6 @@
 controller_manager:
   ros__parameters:
-    update_rate: 30
+    update_rate: 10
 
     drone_cont:
       type: mecanum_drive_controller/MecanumDriveController

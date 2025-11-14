@@ -6,5 +6,5 @@
     
     <xacro:include filename="ros2_control.xacro" />
 
-    <!-- <xacro:include filename="sensors/camera.xacro" /> add camera -->
+    <!-- <xacro:include filename="imu.xacro" /> -->
 </robot>

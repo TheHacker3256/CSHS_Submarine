@@ -84,6 +84,13 @@ class TestableMecanumDriveController : public mecanum_drive_controller::MecanumD
     when_ref_timeout_zero_for_reference_callback_expect_reference_msg_being_used_only_once);
   FRIEND_TEST(MecanumDriveControllerTest, SideToSideAndRotationOdometryTest);
 
+  FRIEND_TEST(MecanumDriveControllerTest, configure_succeeds_tf_test_prefix_false_no_namespace);
+  FRIEND_TEST(MecanumDriveControllerTest, configure_succeeds_tf_test_prefix_true_no_namespace);
+  FRIEND_TEST(MecanumDriveControllerTest, configure_succeeds_tf_blank_prefix_true_no_namespace);
+  FRIEND_TEST(MecanumDriveControllerTest, configure_succeeds_tf_test_prefix_false_set_namespace);
+  FRIEND_TEST(MecanumDriveControllerTest, configure_succeeds_tf_test_prefix_true_set_namespace);
+  FRIEND_TEST(MecanumDriveControllerTest, configure_succeeds_tf_blank_prefix_true_set_namespace);
+
 public:
   controller_interface::CallbackReturn on_configure(
     const rclcpp_lifecycle::State & previous_state) override
@@ -161,9 +168,15 @@ public:
   void TearDown() { controller_.reset(nullptr); }
 
 protected:
-  void SetUpController(const std::string controller_name = "test_mecanum_drive_controller")
+  void SetUpController(
+    const std::string controller_name = "test_mecanum_drive_controller",
+    const rclcpp::NodeOptions & node_options = rclcpp::NodeOptions(), const std::string ns = "")
   {
-    ASSERT_EQ(controller_->init(controller_name), controller_interface::return_type::OK);
+    const auto urdf = "";
+
+    ASSERT_EQ(
+      controller_->init(controller_name, urdf, 0, ns, node_options),
+      controller_interface::return_type::OK);
 
     std::vector<hardware_interface::LoanedCommandInterface> command_ifs;
     command_itfs_.reserve(joint_command_values_.size());
@@ -171,8 +184,9 @@ protected:
 
     for (size_t i = 0; i < joint_command_values_.size(); ++i)
     {
-      command_itfs_.emplace_back(hardware_interface::CommandInterface(
-        command_joint_names_[i], interface_name_, &joint_command_values_[i]));
+      command_itfs_.emplace_back(
+        hardware_interface::CommandInterface(
+          command_joint_names_[i], interface_name_, &joint_command_values_[i]));
       command_ifs.emplace_back(command_itfs_.back());
     }
 
@@ -182,8 +196,9 @@ protected:
 
     for (size_t i = 0; i < joint_state_values_.size(); ++i)
     {
-      state_itfs_.emplace_back(hardware_interface::StateInterface(
-        command_joint_names_[i], interface_name_, &joint_state_values_[i]));
+      state_itfs_.emplace_back(
+        hardware_interface::StateInterface(
+          command_joint_names_[i], interface_name_, &joint_state_values_[i]));
       state_ifs.emplace_back(state_itfs_.back());
     }
 
@@ -266,8 +281,7 @@ protected:
   }
 
 protected:
-  std::vector<std::string> reference_interface_names = {
-    "linear/x/velocity", "linear/y/velocity", "angular/z/velocity"};
+  std::vector<std::string> reference_interface_names = {"linear/x", "linear/y", "angular/z"};
 
   static constexpr char TEST_FRONT_LEFT_CMD_JOINT_NAME[] = "front_left_wheel_joint";
   static constexpr char TEST_FRONT_RIGHT_CMD_JOINT_NAME[] = "front_right_wheel_joint";

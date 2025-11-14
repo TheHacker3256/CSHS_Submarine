@@ -7,18 +7,24 @@ joy_node:
 
 
 
-right_teleop_node:
+drone_cont_teleop_node:
   ros__parameters:
-    # publish_stamped_twist: true 
     axis_linear:
-      x: 3 #Left thumb stick vertical
+      x: 0 #Left thumb stick Horizo
     scale_linear:
       x: 2.0
     scale_linear_turbo:
       x: 6.0
 
+    axis_linear:
+      y: 1 #Left thumb stick vertical
+    scale_linear:
+      y: 2.0
+    scale_linear_turbo:
+      y: 6.0
+
     axis_angular:
-      yaw: 2 #right thumb stick horizontal
+      yaw: 3 #right thumb stick Vertical
     scale_angular:
       yaw: 2.0
     scale_angular_turbo:
@@ -29,23 +35,14 @@ right_teleop_node:
     enable_button: 6 # Left shoulder button
     enable_turbo_button: 7 # Right shoulder button
 
-left_teleop_node:
+diffdrive_teleop_node:
   ros__parameters:
-    # publish_stamped_twist: true 
-    axis_linear:
-      x: 0 #Left thumb stick vertical
-    scale_linear:
-      x: 2.0
-    scale_linear_turbo:
-      x: 6.0
-
     axis_angular:
-      yaw: 1 #right thumb stick horizontal
-    scale_angular:
+      yaw: 2 #Left thumb stick vertical
+    axis_angular:
       yaw: 2.0
     scale_angular_turbo:
-      yaw: 4.0
-
+      yaw: 6.0
     
     require_enable_button: true
     enable_button: 6 # Left shoulder button

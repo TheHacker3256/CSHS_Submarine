@@ -11,24 +11,48 @@ def generate_launch_description():
     parameters=[joy_params],
   )
 
-  right_teleop_node = Node(
+  drone_cont_teleop_node = Node(
     package='teleop_twist_joy',
     executable='teleop_node',
-    name = 'right_teleop_node',
+    name = 'drone_cont_teleop_node',
     parameters=[joy_params],
     remappings=[('/cmd_vel', 'drone_cont/reference_unstamped')]
   )
-  
-  left_teleop_node = Node(
+
+  drone_cont_stamper = Node(
+    package='twist_stamper',
+    executable='twist_stamper',
+    name = 'left_twist_stamper_node',
+    arguments=['--ros-args',
+     '-r',
+     'cmd_vel_in:=drone_cont/reference_unstamped',
+     '-r',
+     'cmd_vel_out:=drone_cont/reference']
+  )
+
+  diffdrive_teleop_node = Node(
     package='teleop_twist_joy',
     executable='teleop_node',
-    name = 'left_teleop_node',
+    name = 'diffdrive_teleop_node',
     parameters=[joy_params],
     remappings=[('/cmd_vel', '/diffdrive_cont/cmd_vel_unstamped')]
   )
 
+  diffdrive_stamper = Node(
+    package='twist_stamper',
+    executable='twist_stamper',
+    name = 'left_twist_stamper_node',
+    arguments=['--ros-args',
+     '-r',
+     'cmd_vel_in:=/diffdrive_cont/cmd_vel_unstamped',
+     '-r',
+     'cmd_vel_out:=/diffdrive_cont/cmd_vel']
+  )
+
   return LaunchDescription([
     joy_node,
-    right_teleop_node,
-    left_teleop_node
+    diffdrive_teleop_node,
+    drone_cont_teleop_node,
+    diffdrive_stamper,
+    drone_cont_stamper
   ])
