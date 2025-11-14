@@ -95,7 +95,7 @@ public:
 
 private:
   Config cfg_;
-  PiGIO pi_;
+  PiGPIO pi_;
 
   Motor fld;
   Motor frd;
