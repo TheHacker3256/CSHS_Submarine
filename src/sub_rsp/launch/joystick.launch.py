@@ -49,10 +49,19 @@ def generate_launch_description():
      'cmd_vel_out:=/diffdrive_cont/cmd_vel']
   )
 
+
+  twist_mux = Node(
+    package='twist_mux',
+    executable='twist_mux',
+    name = 'twist_mux_node',
+    parameters=[joy_params],
+  )
+
   return LaunchDescription([
     joy_node,
+    # twist_mux,
     diffdrive_teleop_node,
     drone_cont_teleop_node,
     diffdrive_stamper,
-    drone_cont_stamper
+    drone_cont_stamper,
   ])
