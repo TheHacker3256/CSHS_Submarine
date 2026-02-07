@@ -24,6 +24,21 @@ def generate_launch_description():
       launch_arguments={'use_sim_time': 'false', 'sim_mode': 'false'}.items()
     )
 
+    camera = Node(
+      package='usb_cam',
+      executable='usb_cam_node_exe',
+      name='usb_cam_node',
+      output='screen',
+      parameters=[{
+        'video_device': '/dev/video0',
+        'image_width': 1920,
+        'image_height': 1080,
+        "frame_rate": 30,
+        'io_method': 'mmap',
+        "retry_on_error": True,
+        "pixel_format": "mjpeg2rgb"
+      }]
+    )
 
     controller_manager = Node(
       package='controller_manager',
@@ -72,6 +87,7 @@ def generate_launch_description():
    
     return LaunchDescription([
       rsp,
+      camera,
       delayed_controller_manager,
       delayed_cont_spawner,
       delayed_joint_broad_spawner
