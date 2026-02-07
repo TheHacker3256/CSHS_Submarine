@@ -13,7 +13,7 @@
 **Description**
 ---------------
 
-The OmniCar is a 4 wheel drive mecanum car designed for autonomous navigation. It is built around a Raspberry Pi running Ubuntu 22.04, ROS2 Humble, and ROS2 Control. The car uses an Arduino Uno as a hardware interface, connected to a Duinotech Motor Driver Shield and 4 DC motors.
+The CSHS Submarine is an under water ROV designed as a modular base for underwater exploration and research. It is built around a Raspberry Pi running Ubuntu 22.04, ROS2 Humble, and ROS2 Control. The submarine uses 6 motors controlled by an esp32 connected to the raspberry pi running ros2.
 
 **Hardware Requirements**
 ------------------------
