@@ -28,7 +28,7 @@ The CSHS Submarine is an under water ROV designed as a modular base for underwat
 
 Follow the official ROS2 installation guide for Ubuntu 22.04: https://index.ros.org/doc/ros2/Installation/Linux-Install-ROS-2/
 
-### Clone and Run the Code
+### Clone and Run the Code from source
 
 1. Clone the repository:
 ```
@@ -51,6 +51,18 @@ Follow the official ROS2 installation guide for Ubuntu 22.04: https://index.ros.
   ros2 launch sub_rsp launch_sim.launch.py
 ```
 
+### Run the docker container
+docker hub page: https://hub.docker.com/r/thehacker3256/cshs-submarine
+
+1. pull the container
+```
+docker pull thehacker3256/cshs-submarine
+```
+2. run the container
+```
+docker run --cap-add=SYS_PTRACE --security-opt=seccomp=unconfined --ipc=host --network=host --pid=host --privileged --name=sub thehacker3256/cshs-submarine:latest
+```
+
 
 
 **Hardware Interface**
@@ -61,4 +73,4 @@ The car uses an ESP32 microcontroller to interface with the 6 Electronic speed c
 
 **TODO**
 ---------
-- [ ] Make a Dockerfile for easy launch and install
+- [x] Make a Dockerfile for easy launch and install
