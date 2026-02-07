@@ -1,4 +1,4 @@
-**CSHS: Cairns State High School Submarine**
+**CSHS Submarine: Cairns State High School Submarine**
 =====================================
 
 **Table of Contents**
@@ -8,7 +8,7 @@
 2. [Hardware Requirements](#hardware-requirements)
 3. [Installation](#installation)
 4. [Hardware Interface](#hardware-interface)
-5. [ROS2 Control](#ros2-control)
+5. [TODO](#todo)
 
 **Description**
 ---------------
@@ -61,4 +61,4 @@ The car uses an ESP32 microcontroller to interface with the 6 Electronic speed c
 
 **TODO**
 ---------
-[ ] Make a Dockerfile for easy launch and install
+- [ ] Make a Dockerfile for easy launch and install
