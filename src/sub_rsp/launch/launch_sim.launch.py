@@ -33,8 +33,6 @@ def generate_launch_description():
       output='screen'
     )
 
-
-
     diff_drive_spawner = Node(
       package="controller_manager",
       executable="spawner",
