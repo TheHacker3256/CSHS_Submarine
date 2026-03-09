@@ -23,6 +23,11 @@ def generate_launch_description():
       PythonLaunchDescriptionSource([os.path.join(get_package_share_directory(package_name),'launch','rsp.launch.py')]), 
       launch_arguments={'use_sim_time': 'false', 'sim_mode': 'false'}.items()
     )
+    
+    joystick = IncludeLaunchDescription(
+      PythonLaunchDescriptionSource([os.path.join(get_package_share_directory(package_name),'launch','joystick.launch.py')]), 
+    )
+
 
     camera = Node(
       package='usb_cam',
@@ -38,6 +43,18 @@ def generate_launch_description():
         "retry_on_error": True,
         "pixel_format": "mjpeg2rgb"
       }]
+    )
+
+    imu = Node(
+      package='ros2_mpu6050',
+      executable='ros2_mpu6050',
+    )
+
+    imu_visualiser = Node(
+      package='imu_filter_madgwick',
+      executable='imu_filter_madgwick_node',
+      parameters=[{'use_mag': False, 'publish_tf': True, 'world_frame': 'enu'}],
+      remappings=[("/imu/data_raw", "/imu/mpu6050")],
     )
 
     controller_manager = Node(
@@ -88,7 +105,10 @@ def generate_launch_description():
     return LaunchDescription([
       rsp,
       camera,
+      imu,
+      imu_visualiser,
       delayed_controller_manager,
       delayed_cont_spawner,
-      delayed_joint_broad_spawner
+      delayed_joint_broad_spawner,
+      joystick
     ])

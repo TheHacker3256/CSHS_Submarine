@@ -22,7 +22,15 @@ def generate_launch_description():
 
     # Include the Gazebo launch file, provided by the gazebo_ros package
     gazebo = IncludeLaunchDescription(
-      PythonLaunchDescriptionSource([os.path.join(get_package_share_directory('gazebo_ros'), 'launch', 'gazebo.launch.py')])
+      PythonLaunchDescriptionSource([os.path.join(get_package_share_directory('gazebo_ros'), 'launch', 'gazebo.launch.py')]),
+      launch_arguments={'world': os.path.join(get_package_share_directory(package_name), 'worlds', 'empty.world')}.items()
+    )
+
+    imu_visualiser = Node(
+      package='imu_filter_madgwick',
+      executable='imu_filter_madgwick_node',
+      parameters=[{'use_mag': False, 'publish_tf': True, 'world_frame': 'enu'}],
+      remappings=[("/imu/data_raw", "/imu/mpu6050")],
     )
 
     # Run the spawner node from the gazebo_ros package. The entity name doesn't really matter if you only have a single robot.
@@ -67,11 +75,15 @@ def generate_launch_description():
     # Launch them all!
     return LaunchDescription([
       rsp,
+      #gazebo sim stuff
       gazebo,
       spawn_entity,
+      #controller spawners
       joint_broad_spawner,
       diff_drive_spawner,
       drone_drive_spawner,
+      #other nodes
+      imu_visualiser,
       joy,
-      twist_mux
+      # twist_mux
     ])
