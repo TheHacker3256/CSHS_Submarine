@@ -58,7 +58,7 @@ diffdrive_cont:
     enable_odom_tf: true
 
     cmd_vel_timeout: 0.5 # seconds
-    publish_limited_velocity: true
+    publish_limited_velocity: false
     velocity_rolling_window_size: 10
 
     

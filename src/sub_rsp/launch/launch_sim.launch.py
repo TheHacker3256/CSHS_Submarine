@@ -68,10 +68,11 @@ def generate_launch_description():
     twist_mux = Node(
             package="twist_mux",
             executable="twist_mux",
+            output='screen',
             parameters=[twist_mux_params, {'use_sim_time': True}],
-            remappings=[('/cmd_vel_out','/diff_cont/cmd_vel_unstamped')]
+            remappings={('/cmd_vel_out', '/cmd_vel')},
         )
-
+    
     # Launch them all!
     return LaunchDescription([
       rsp,
@@ -85,5 +86,5 @@ def generate_launch_description():
       #other nodes
       imu_visualiser,
       joy,
-      # twist_mux
+      twist_mux
     ])

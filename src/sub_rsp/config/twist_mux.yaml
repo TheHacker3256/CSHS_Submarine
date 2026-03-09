@@ -1,13 +1,13 @@
-twist_mux_node:
+twist_mux:
   ros__parameters:
+    use_stamped: true
     topics:
-      - topic: /diffdrive_cont/cmd_vel
-        timeout: 0.5
-        priority: 10
-      # - topic: /cmd_vel_nav
-      #   timeout: 0.5
-      #   priority: 5
+      joystick:
+        topic   : cmd_vel_joy
+        timeout : 0.5
+        priority: 90
     locks:
-      - topic: /e_stop_active
-        priority: 20
-    output_topic: /cmd_vel_out
+      e_stop:
+        topic   : e_stop
+        timeout : 0.0
+        priority: 255
