@@ -1,9 +1,23 @@
-twist_mux:
+diffdrive_twist_mux:
   ros__parameters:
     use_stamped: true
     topics:
       joystick:
-        topic   : cmd_vel_joy
+        topic   : diffdrive_cont/cmd_vel_unstamped
+        timeout : 0.5
+        priority: 90
+    locks:
+      e_stop:
+        topic   : e_stop
+        timeout : 0.0
+        priority: 255
+
+drone_twist_mux:
+  ros__parameters:
+    use_stamped: true
+    topics:
+      joystick:
+        topic   : drone_cont/reference_unstamped
         timeout : 0.5
         priority: 90
     locks:
