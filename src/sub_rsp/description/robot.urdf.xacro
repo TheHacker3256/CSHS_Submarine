@@ -1,9 +1,14 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro"  name="robot">
   <xacro:arg name='sim_mode' default='true'/>
-
-    <xacro:include filename="./urdf/sub_2.xacro" />
-    
+  <xacro:if value="$(arg sim_mode)">
+    <xacro:include filename="./urdf/sub_2_sim.xacro" />
+  </xacro:if>
+  <xacro:unless value="$(arg sim_mode)">
+    <xacro:include filename="./urdf/sub_2_bot.xacro" />
+  </xacro:unless
+  
+  >
     <xacro:include filename="ros2_control.xacro" />
 
     <xacro:include filename="./sensors/imu.xacro" />
