@@ -1,0 +1,388 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="Sub_V2">
+    <link name="base_link">
+        <inertial>
+            <origin xyz="-1.1114439231483627e-05 0.08264183500299829 0.04520685370141687" rpy="0.0 0.0 0.0" />
+            <mass value="3.484989325765643" />
+            <inertia ixx="0.15449191389827527" iyy="0.03319302730716313" izz="0.18342913785047976" ixy="1.3409169848760383e-06" iyz="-0.0021698785738260584" ixz="1.5973949459223582e-06" />
+        </inertial>
+        <visual name="base_link_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="file://$(find sub_rsp)/description/meshes/Bottom_Half-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="base_link_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="file://$(find sub_rsp)/description/meshes/Bottom_Half-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Top_Half">
+        <inertial>
+            <origin xyz="0.08369360259099537 -0.20227496848389045 -0.03583335999805778" rpy="0.0 -0.0 0.0" />
+            <mass value="3.718404757403856" />
+            <inertia ixx="0.20356214509530007" iyy="0.03445114668027614" izz="0.2307218888432674" ixy="5.124487786637311e-06" iyz="-0.0017107519336561512" ixz="2.042695653078596e-06" />
+        </inertial>
+        <visual name="Top_Half-v1_visual">
+            <origin xyz="0.08368412798066167 -0.1551255244976786 0.0004999977704210678" rpy="1.9631827498457394e-15 8.745438005029826e-15 3.141592653588663" />
+            <geometry>
+                <mesh filename="file://$(find sub_rsp)/description/meshes/Top_Half-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Top_Half-v1_collision">
+            <origin xyz="0.08368412798066167 -0.1551255244976786 0.0004999977704210678" rpy="1.9631827498457394e-15 8.745438005029826e-15 3.141592653588663" />
+            <geometry>
+                <mesh filename="file://$(find sub_rsp)/description/meshes/Top_Half-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="large_motor_surround_right">
+        <inertial>
+            <origin xyz="-0.02882147636020669 -0.11473537530989163 -0.007494823267978674" rpy="0.0 -0.0 0.0" />
+            <mass value="0.22198816557739198" />
+            <inertia ixx="0.0005779320413571152" iyy="0.0002580630484210097" izz="0.0005965174449867328" ixy="-5.9351313683287165e-05" iyz="-2.487841097402465e-07" ixz="-7.692202100978454e-08" />
+        </inertial>
+        <visual name="large_motor_surround_right-v1_visual">
+            <origin xyz="-0.05716666603721677 -0.13531586798082387 -0.007499995864277338" rpy="1.9933268427426558e-16 -1.5707963267948697 0" />
+            <geometry>
+                <mesh filename="file://$(find sub_rsp)/description/meshes/large_motor_surround_right-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="large_motor_surround_right-v1_collision">
+            <origin xyz="-0.05716666603721677 -0.13531586798082387 -0.007499995864277338" rpy="1.9933268427426558e-16 -1.5707963267948697 0" />
+            <geometry>
+                <mesh filename="file://$(find sub_rsp)/description/meshes/large_motor_surround_right-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="large_motor_surround_left">
+        <inertial>
+            <origin xyz="0.11473537934748919 0.028821476363107053 -0.0075051684605880456" rpy="0.0 -0.0 0.0" />
+            <mass value="0.22198816557739198" />
+            <inertia ixx="0.0002580630484240056" iyy="0.0005779320413541644" izz="0.0005965174449867605" ixy="-5.9351313691382984e-05" iyz="-7.692202101466418e-08" ixz="-2.4878410974274356e-07" />
+        </inertial>
+        <visual name="large_motor_surround_left-v1_visual">
+            <origin xyz="0.1353158720177047 0.05716666604063743 -0.007499995864289311" rpy="-1.5707963268201806 1.5707963267948706 0" />
+            <geometry>
+                <mesh filename="file://$(find sub_rsp)/description/meshes/large_motor_surround_left-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="large_motor_surround_left-v1_collision">
+            <origin xyz="0.1353158720177047 0.05716666604063743 -0.007499995864289311" rpy="-1.5707963268201806 1.5707963267948706 0" />
+            <geometry>
+                <mesh filename="file://$(find sub_rsp)/description/meshes/large_motor_surround_left-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="fblm_base">
+        <inertial>
+            <origin xyz="-2.0185523652571646e-09 0.008975003961073398 4.1357108138129205e-09" rpy="0.0 -0.0 0.0" />
+            <mass value="0.008952728531826265" />
+            <inertia ixx="6.14368052343937e-07" iyy="7.4797085205581e-07" izz="6.143680519854996e-07" ixy="4.380176776841437e-17" iyz="-2.4286128663675293e-17" ixz="9.757819552369538e-18" />
+        </inertial>
+        <visual name="fblm_base-v1_visual">
+            <origin xyz="-1.2940775453580298 1.0318864073024758 0.17740947698099555" rpy="-1.5707963267948983 -2.6282217601462473e-14 1.264630411538862e-11" />
+            <geometry>
+                <mesh filename="file://$(find sub_rsp)/description/meshes/fblm_base-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="fblm_base-v1_collision">
+            <origin xyz="-1.2940775453580298 1.0318864073024758 0.17740947698099555" rpy="-1.5707963267948983 -2.6282217601462473e-14 1.264630411538862e-11" />
+            <geometry>
+                <mesh filename="file://$(find sub_rsp)/description/meshes/fblm_base-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="fblm_top">
+        <inertial>
+            <origin xyz="-2.0148495849525716e-09 -0.016478364880786387 -4.1354404167748275e-09" rpy="0.0 -0.0 3.5032461608120435e-46" />
+            <mass value="0.022692999467687693" />
+            <inertia ixx="5.973982030138025e-06" iyy="2.1688388801011094e-06" izz="5.973982025465547e-06" ixy="2.0608514894604464e-15" iyz="-1.775923158531256e-16" ixz="-2.0431139419185833e-14" />
+        </inertial>
+        <visual name="fblm_top-v1_visual">
+            <origin xyz="-1.0696775453321536 1.0318863994102185 0.17740946870963428" rpy="-1.5707963267948983 2.628221760146084e-14 -1.264630411538862e-11" />
+            <geometry>
+                <mesh filename="file://$(find sub_rsp)/description/meshes/fblm_top-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="fblm_top-v1_collision">
+            <origin xyz="-1.0696775453321536 1.0318863994102185 0.17740946870963428" rpy="-1.5707963267948983 2.628221760146084e-14 -1.264630411538862e-11" />
+            <geometry>
+                <mesh filename="file://$(find sub_rsp)/description/meshes/fblm_top-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="brm_base">
+        <inertial>
+            <origin xyz="-2.0191649241496635e-09 6.297368670971082e-10 -0.010000002229574374" rpy="0.0 -0.0 0.0" />
+            <mass value="0.007427667510882344" />
+            <inertia ixx="4.695709722371674e-07" iyy="4.695709722923533e-07" izz="4.4396411013301884e-07" ixy="-1.46150452851046e-16" iyz="-2.4665599424045226e-17" ixz="-4.2717565595928875e-17" />
+        </inertial>
+        <visual name="brm_base-v1_visual">
+            <origin xyz="-1.319377534681289 -0.9289364027280402 -0.21360947507492697" rpy="1.5707963267948952 -2.4716340085717443e-14 7.330873430963117e-16" />
+            <geometry>
+                <mesh filename="file://$(find sub_rsp)/description/meshes/brm_base-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="brm_base-v1_collision">
+            <origin xyz="-1.319377534681289 -0.9289364027280402 -0.21360947507492697" rpy="1.5707963267948952 -2.4716340085717443e-14 7.330873430963117e-16" />
+            <geometry>
+                <mesh filename="file://$(find sub_rsp)/description/meshes/brm_base-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="brm_top">
+        <inertial>
+            <origin xyz="-2.019162366195815e-09 0.012634101339124194 6.297354460116366e-10" rpy="0.0 -3.5032461608120435e-46 0.0" />
+            <mass value="0.013557728270869584" />
+            <inertia ixx="2.8334912466564623e-06" iyy="1.103808030082642e-06" izz="2.833491246530262e-06" ixy="1.1492543028346344e-17" iyz="-4.4018608202911474e-17" ixz="-1.3877787807814455e-17" />
+        </inertial>
+        <visual name="brm_top-v1_visual">
+            <origin xyz="-0.9289364053769353 0.1936094750749188 1.3193775332918734" rpy="-3.1415926535897665 1.570796326794895 0" />
+            <geometry>
+                <mesh filename="file://$(find sub_rsp)/description/meshes/brm_top-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="brm_top-v1_collision">
+            <origin xyz="-0.9289364053769353 0.1936094750749188 1.3193775332918734" rpy="-3.1415926535897665 1.570796326794895 0" />
+            <geometry>
+                <mesh filename="file://$(find sub_rsp)/description/meshes/brm_top-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="fbrm_top">
+        <inertial>
+            <origin xyz="-2.015160873725108e-09 -0.016478364882494816 -4.135450275555286e-09" rpy="0.0 -0.0 0.0" />
+            <mass value="0.022692999467687693" />
+            <inertia ixx="5.973982030165349e-06" iyy="2.168838880673568e-06" izz="5.973982025168911e-06" ixy="2.3783058855642025e-15" iyz="-2.443791696782327e-16" ixz="-2.0332693861924156e-14" />
+        </inertial>
+        <visual name="fbrm_top-v1_visual">
+            <origin xyz="-1.0696775453457266 1.0318863993949852 0.17740946870962515" rpy="-1.5707963267948981 2.669008313132985e-14 5.755341776617102e-15" />
+            <geometry>
+                <mesh filename="file://$(find sub_rsp)/description/meshes/fbrm_top-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="fbrm_top-v1_collision">
+            <origin xyz="-1.0696775453457266 1.0318863993949852 0.17740946870962515" rpy="-1.5707963267948981 2.669008313132985e-14 5.755341776617102e-15" />
+            <geometry>
+                <mesh filename="file://$(find sub_rsp)/description/meshes/fbrm_top-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="fbrm_base">
+        <inertial>
+            <origin xyz="-2.0191855298890007e-09 0.00897500396278371 4.13572232460524e-09" rpy="0.0 -0.0 0.0" />
+            <mass value="0.008952728531826265" />
+            <inertia ixx="6.143680520880653e-07" iyy="7.479708519783981e-07" izz="6.143680517647562e-07" ixy="-1.5265566588595902e-16" iyz="-5.1228552649940085e-17" ixz="-1.713039432527097e-17" />
+        </inertial>
+        <visual name="fbrm_base-v1_visual">
+            <origin xyz="-1.2940775453457287 1.0318864073205563 0.17740947698100687" rpy="-1.5707963267948981 -2.625987170928767e-14 -2.979784215054226e-15" />
+            <geometry>
+                <mesh filename="file://$(find sub_rsp)/description/meshes/fbrm_base-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="fbrm_base-v1_collision">
+            <origin xyz="-1.2940775453457287 1.0318864073205563 0.17740947698100687" rpy="-1.5707963267948981 -2.625987170928767e-14 -2.979784215054226e-15" />
+            <geometry>
+                <mesh filename="file://$(find sub_rsp)/description/meshes/fbrm_base-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="flm_top">
+        <inertial>
+            <origin xyz="-2.0191613714359847e-09 0.012634101339130392 6.297347354689009e-10" rpy="0.0 -0.0 0.0" />
+            <mass value="0.013557728270869584" />
+            <inertia ixx="2.8334912467522524e-06" iyy="1.1038080304642817e-06" izz="2.8334912468759056e-06" ixy="7.556889142223966e-17" iyz="4.1145472445824893e-17" ixz="-2.1391308863139002e-16" />
+        </inertial>
+        <visual name="flm_top-v1_visual">
+            <origin xyz="-1.3193775346812897 0.19360947507493415 -0.9289364027280383" rpy="-3.1415926535897927 1.4873587061539996e-15 -2.4896751327219022e-14" />
+            <geometry>
+                <mesh filename="file://$(find sub_rsp)/description/meshes/flm_top-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="flm_top-v1_collision">
+            <origin xyz="-1.3193775346812897 0.19360947507493415 -0.9289364027280383" rpy="-3.1415926535897927 1.4873587061539996e-15 -2.4896751327219022e-14" />
+            <geometry>
+                <mesh filename="file://$(find sub_rsp)/description/meshes/flm_top-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="blm_top">
+        <inertial>
+            <origin xyz="-2.0191632899013714e-09 0.012634101339130996 6.297359789186885e-10" rpy="0.0 1.5371385868737596e-91 1.0947644252537636e-47" />
+            <mass value="0.013557728270869584" />
+            <inertia ixx="2.8334912466660032e-06" iyy="1.1038080304070358e-06" izz="2.833491247107924e-06" ixy="-9.714451465470118e-17" iyz="3.9248118643975254e-17" ixz="-2.400423609882906e-16" />
+        </inertial>
+        <visual name="blm_top-v1_visual">
+            <origin xyz="1.319377530642972 0.193609475074865 0.9289364039875165" rpy="1.5333906649291654e-16 8.743006315301518e-16 3.141592653589764" />
+            <geometry>
+                <mesh filename="file://$(find sub_rsp)/description/meshes/blm_top-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="blm_top-v1_collision">
+            <origin xyz="1.319377530642972 0.193609475074865 0.9289364039875165" rpy="1.5333906649291654e-16 8.743006315301518e-16 3.141592653589764" />
+            <geometry>
+                <mesh filename="file://$(find sub_rsp)/description/meshes/blm_top-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="frm_top">
+        <inertial>
+            <origin xyz="-2.019162934630003e-09 0.012634101339124282 6.297365828800139e-10" rpy="0.0 -0.0 0.0" />
+            <mass value="0.013557728270869584" />
+            <inertia ixx="2.8334912467262857e-06" iyy="1.1038080303324427e-06" izz="2.8334912468763393e-06" ixy="8.651933336434325e-17" iyz="4.5455176081454773e-17" ixz="-1.8735013540549517e-16" />
+        </inertial>
+        <visual name="frm_top-v1_visual">
+            <origin xyz="-1.319377534681289 0.19360947507492632 -0.9289364027280388" rpy="3.141592653589793 -3.4450928447750876e-16 -2.450817326860018e-14" />
+            <geometry>
+                <mesh filename="file://$(find sub_rsp)/description/meshes/frm_top-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="frm_top-v1_collision">
+            <origin xyz="-1.319377534681289 0.19360947507492632 -0.9289364027280388" rpy="3.141592653589793 -3.4450928447750876e-16 -2.450817326860018e-14" />
+            <geometry>
+                <mesh filename="file://$(find sub_rsp)/description/meshes/frm_top-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="blm_base">
+        <inertial>
+            <origin xyz="-2.019163503064192e-09 6.297361565543724e-10 -0.01000000222958109" rpy="0.0 -0.0 0.0" />
+            <mass value="0.007427667510882344" />
+            <inertia ixx="4.6957097222394013e-07" iyy="4.695709722528883e-07" izz="4.4396411006753303e-07" ixy="-1.194790794079026e-16" iyz="-2.2551405187698492e-17" ixz="-4.3639137442541553e-17" />
+        </inertial>
+        <visual name="blm_base-v1_visual">
+            <origin xyz="-1.3193775346812902 -0.9289364027280412 -0.21360947507493372" rpy="1.5707963267948954 -2.473021787352519e-14 7.330873430963115e-16" />
+            <geometry>
+                <mesh filename="file://$(find sub_rsp)/description/meshes/blm_base-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="blm_base-v1_collision">
+            <origin xyz="-1.3193775346812902 -0.9289364027280412 -0.21360947507493372" rpy="1.5707963267948954 -2.473021787352519e-14 7.330873430963115e-16" />
+            <geometry>
+                <mesh filename="file://$(find sub_rsp)/description/meshes/blm_base-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="flm_base">
+        <inertial>
+            <origin xyz="-2.0191619398701734e-09 6.297347354689009e-10 -0.010000002229580734" rpy="0.0 -0.0 0.0" />
+            <mass value="0.007427667510882344" />
+            <inertia ixx="4.6957097217211526e-07" iyy="4.695709722426968e-07" izz="4.439641100913855e-07" ixy="-7.827939685345342e-17" iyz="-2.3432319452842965e-17" ixz="-4.092863201132779e-17" />
+        </inertial>
+        <visual name="flm_base-v1_visual">
+            <origin xyz="-1.319377534681289 -0.9289364027280423 -0.21360947507493436" rpy="1.5707963267948961 -2.488287353941124e-14 7.330873430963114e-16" />
+            <geometry>
+                <mesh filename="file://$(find sub_rsp)/description/meshes/flm_base-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="flm_base-v1_collision">
+            <origin xyz="-1.319377534681289 -0.9289364027280423 -0.21360947507493436" rpy="1.5707963267948961 -2.488287353941124e-14 7.330873430963114e-16" />
+            <geometry>
+                <mesh filename="file://$(find sub_rsp)/description/meshes/flm_base-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="frm_base">
+        <inertial>
+            <origin xyz="-2.0191649241496635e-09 6.297364407714668e-10 -0.010000002229574622" rpy="0.0 -0.0 0.0" />
+            <mass value="0.007427667510882344" />
+            <inertia ixx="4.6957097224562417e-07" iyy="4.6957097227500605e-07" izz="4.439641101902647e-07" ixy="-1.459336124165489e-16" iyz="-2.85009646092127e-17" ixz="-4.456070928915423e-17" />
+        </inertial>
+        <visual name="frm_base-v1_visual">
+            <origin xyz="-1.3193775346812897 -0.9289364027280405 -0.2136094750749274" rpy="1.570796326794895 -2.471634008571747e-14 7.330873430963114e-16" />
+            <geometry>
+                <mesh filename="file://$(find sub_rsp)/description/meshes/frm_base-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="frm_base-v1_collision">
+            <origin xyz="-1.3193775346812897 -0.9289364027280405 -0.2136094750749274" rpy="1.570796326794895 -2.471634008571747e-14 7.330873430963114e-16" />
+            <geometry>
+                <mesh filename="file://$(find sub_rsp)/description/meshes/frm_base-v1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="brm_base-v1_Revolute-16" type="continuous">
+        <origin xyz="0.0 0.0 -0.02" rpy="-1.5707963267948966 -3.105604842564524e-30 3.1791297573589006e-30" />
+        <parent link="brm_base" />
+        <child link="brm_top" />
+        <axis xyz="4.983877831952334e-32 0.9999999999999999 -2.465190328815662e-32" />
+    </joint>
+    <joint name="blm_base-v1_Revolute-17" type="continuous">
+        <origin xyz="0.0 0.0 -0.02" rpy="-1.5707963267948966 -3.1039158660497038e-30 3.1791297573589006e-30" />
+        <parent link="blm_base" />
+        <child link="blm_top" />
+        <axis xyz="5.152775483434341e-32 1.0 0.0" />
+    </joint>
+    <joint name="frm_base-v1_Revolute-18" type="continuous">
+        <origin xyz="0.0 0.0 -0.02" rpy="-1.5707963267948966 -3.1056048425645144e-30 2.3686136474852704e-32" />
+        <parent link="frm_base" />
+        <child link="frm_top" />
+        <axis xyz="4.98387783195328e-32 1.0 0.0" />
+    </joint>
+    <joint name="flm_base-v1_Revolute-19" type="continuous">
+        <origin xyz="0.0 0.0 -0.02" rpy="-1.5707963267948966 -3.163521624810304e-30 2.3686136474852704e-32" />
+        <parent link="flm_base" />
+        <child link="flm_top" />
+        <axis xyz="-8.078003926257008e-33 1.0 0.0" />
+    </joint>
+    <joint name="base_link_Rigid-20" type="fixed">
+        <origin xyz="0.12499999798083672 0.27387447550241617 0.028000002229581062" rpy="1.2089594403371724e-16 2.7353119769202304e-14 3.1415926535897927" />
+        <parent link="base_link" />
+        <child link="flm_base" />
+    </joint>
+    <joint name="base_link_Rigid-21" type="fixed">
+        <origin xyz="-0.12500000201916323 0.27387447550241634 0.02800000222957422" rpy="1.2089594403371724e-16 2.7353119769202304e-14 3.1415926535897927" />
+        <parent link="base_link" />
+        <child link="frm_base" />
+    </joint>
+    <joint name="base_link_Rigid-22" type="fixed">
+        <origin xyz="-0.12500000201916364 -0.10612552449758425 0.02800000222957426" rpy="1.2089594403371724e-16 2.7353119769202304e-14 3.1415926535897927" />
+        <parent link="base_link" />
+        <child link="brm_base" />
+    </joint>
+    <joint name="base_link_Rigid-23" type="fixed">
+        <origin xyz="0.12499999798083622 -0.10612552449758443 0.028000002229581097" rpy="1.2089594403371724e-16 2.7353119769202304e-14 3.1415926535897927" />
+        <parent link="base_link" />
+        <child link="blm_base" />
+    </joint>
+    <joint name="fblm_base-v1_Revolute-24" type="continuous">
+        <origin xyz="0.0 0.017949999999999945 1.7763568394002505e-17" rpy="3.141592653589793 -1.635770970422035e-27 -3.155443620884048e-30" />
+        <parent link="fblm_base" />
+        <child link="fblm_top" />
+        <axis xyz="-3.1554436208840472e-30 -1.0 0.0" />
+    </joint>
+    <joint name="fbrm_base-v1_Revolute-25" type="continuous">
+        <origin xyz="0.0 0.017949999999999983 0.0" rpy="3.141592653589793 -1.1618020702567262e-31 8.5165357427422e-64" />
+        <parent link="fbrm_base" />
+        <child link="fbrm_top" />
+        <axis xyz="0.0 -1.0 1.9721522630525295e-31" />
+    </joint>
+    <joint name="large_motor_surround_right-v1_Rigid-26" type="fixed">
+        <origin xyz="-0.05716667000000012 -0.13531586999999987 -0.0075" rpy="1.3390533564424093e-32 -3.180095524172204e-30 -1.5707963267948977" />
+        <parent link="large_motor_surround_right" />
+        <child link="fbrm_base" />
+    </joint>
+    <joint name="large_motor_surround_left-v1_Rigid-27" type="fixed">
+        <origin xyz="0.13531586999927725 0.05716667000171064 -0.0075" rpy="1.6188585196669733e-27 -3.1554436208840472e-30 -3.1415926535771512" />
+        <parent link="large_motor_surround_left" />
+        <child link="fblm_base" />
+    </joint>
+    <joint name="base_link_Rigid-28" type="fixed">
+        <origin xyz="0.08368412798083667 -0.18962552449758452 0.008000012229579934" rpy="-1.208959436879148e-16 -2.735311976920383e-14 -1.2642768341354513e-11" />
+        <parent link="base_link" />
+        <child link="large_motor_surround_left" />
+    </joint>
+    <joint name="base_link_Rigid-29" type="fixed">
+        <origin xyz="-0.08368413201916326 -0.18962552449758438 0.008000012229575368" rpy="2.7353119769202234e-14 -1.2089594403374547e-16 -1.5707963267948968" />
+        <parent link="base_link" />
+        <child link="large_motor_surround_right" />
+    </joint>
+    <joint name="base_link_Rigid-30" type="fixed">
+        <origin xyz="0.0836841279808369 -0.1551255244975845 0.0005000022295799234" rpy="1.2089594406465385e-16 2.7353119769202168e-14 -3.141592653588663" />
+        <parent link="base_link" />
+        <child link="Top_Half" />
+    </joint>
+</robot>
