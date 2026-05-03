@@ -9,13 +9,13 @@
         <visual name="base_link_visual">
             <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
             <geometry>
-                <mesh filename="$(find sub_rsp)/description/meshes/Bottom_Half-v1.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="$(find sub_rsp)/description/meshes/Bottom_Half-v1.dae" scale="0.001 0.001 0.001" />
             </geometry>
         </visual>
         <collision name="base_link_collision">
             <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
             <geometry>
-                <mesh filename="$(find sub_rsp)/description/meshes/Bottom_Half-v1.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="$(find sub_rsp)/description/meshes/Bottom_Half-v1.dae" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
@@ -28,13 +28,13 @@
         <visual name="Top_Half-v1_visual">
             <origin xyz="0.08368412798066167 -0.1551255244976786 0.0004999977704210678" rpy="1.9631827498457394e-15 8.745438005029826e-15 3.141592653588663" />
             <geometry>
-                <mesh filename="$(find sub_rsp)/description/meshes/Top_Half-v1.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="$(find sub_rsp)/description/meshes/Top_Half-v1.dae" scale="0.001 0.001 0.001" />
             </geometry>
         </visual>
         <collision name="Top_Half-v1_collision">
             <origin xyz="0.08368412798066167 -0.1551255244976786 0.0004999977704210678" rpy="1.9631827498457394e-15 8.745438005029826e-15 3.141592653588663" />
             <geometry>
-                <mesh filename="$(find sub_rsp)/description/meshes/Top_Half-v1.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="$(find sub_rsp)/description/meshes/Top_Half-v1.dae" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
@@ -47,13 +47,13 @@
         <visual name="large_motor_surround_right-v1_visual">
             <origin xyz="-0.05716666603721677 -0.13531586798082387 -0.007499995864277338" rpy="1.9933268427426558e-16 -1.5707963267948697 0" />
             <geometry>
-                <mesh filename="$(find sub_rsp)/description/meshes/large_motor_surround_right-v1.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="$(find sub_rsp)/description/meshes/large_motor_surround_right-v1.dae" scale="0.001 0.001 0.001" />
             </geometry>
         </visual>
         <collision name="large_motor_surround_right-v1_collision">
             <origin xyz="-0.05716666603721677 -0.13531586798082387 -0.007499995864277338" rpy="1.9933268427426558e-16 -1.5707963267948697 0" />
             <geometry>
-                <mesh filename="$(find sub_rsp)/description/meshes/large_motor_surround_right-v1.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="$(find sub_rsp)/description/meshes/large_motor_surround_right-v1.dae" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
@@ -66,13 +66,13 @@
         <visual name="large_motor_surround_left-v1_visual">
             <origin xyz="0.1353158720177047 0.05716666604063743 -0.007499995864289311" rpy="-1.5707963268201806 1.5707963267948706 0" />
             <geometry>
-                <mesh filename="$(find sub_rsp)/description/meshes/large_motor_surround_left-v1.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="$(find sub_rsp)/description/meshes/large_motor_surround_left-v1.dae" scale="0.001 0.001 0.001" />
             </geometry>
         </visual>
         <collision name="large_motor_surround_left-v1_collision">
             <origin xyz="0.1353158720177047 0.05716666604063743 -0.007499995864289311" rpy="-1.5707963268201806 1.5707963267948706 0" />
             <geometry>
-                <mesh filename="$(find sub_rsp)/description/meshes/large_motor_surround_left-v1.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="$(find sub_rsp)/description/meshes/large_motor_surround_left-v1.dae" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
@@ -85,13 +85,13 @@
         <visual name="fblm_base-v1_visual">
             <origin xyz="-1.2940775453580298 1.0318864073024758 0.17740947698099555" rpy="-1.5707963267948983 -2.6282217601462473e-14 1.264630411538862e-11" />
             <geometry>
-                <mesh filename="$(find sub_rsp)/description/meshes/fblm_base-v1.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="$(find sub_rsp)/description/meshes/fblm_base-v1.dae" scale="0.001 0.001 0.001" />
             </geometry>
         </visual>
         <collision name="fblm_base-v1_collision">
             <origin xyz="-1.2940775453580298 1.0318864073024758 0.17740947698099555" rpy="-1.5707963267948983 -2.6282217601462473e-14 1.264630411538862e-11" />
             <geometry>
-                <mesh filename="$(find sub_rsp)/description/meshes/fblm_base-v1.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="$(find sub_rsp)/description/meshes/fblm_base-v1.dae" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
@@ -104,13 +104,13 @@
         <visual name="fblm_top-v1_visual">
             <origin xyz="-1.0696775453321536 1.0318863994102185 0.17740946870963428" rpy="-1.5707963267948983 2.628221760146084e-14 -1.264630411538862e-11" />
             <geometry>
-                <mesh filename="$(find sub_rsp)/description/meshes/fblm_top-v1.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="$(find sub_rsp)/description/meshes/fblm_top-v1.dae" scale="0.001 0.001 0.001" />
             </geometry>
         </visual>
         <collision name="fblm_top-v1_collision">
             <origin xyz="-1.0696775453321536 1.0318863994102185 0.17740946870963428" rpy="-1.5707963267948983 2.628221760146084e-14 -1.264630411538862e-11" />
             <geometry>
-                <mesh filename="$(find sub_rsp)/description/meshes/fblm_top-v1.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="$(find sub_rsp)/description/meshes/fblm_top-v1.dae" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
@@ -123,13 +123,13 @@
         <visual name="brm_base-v1_visual">
             <origin xyz="-1.319377534681289 -0.9289364027280402 -0.21360947507492697" rpy="1.5707963267948952 -2.4716340085717443e-14 7.330873430963117e-16" />
             <geometry>
-                <mesh filename="$(find sub_rsp)/description/meshes/brm_base-v1.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="$(find sub_rsp)/description/meshes/brm_base-v1.dae" scale="0.001 0.001 0.001" />
             </geometry>
         </visual>
         <collision name="brm_base-v1_collision">
             <origin xyz="-1.319377534681289 -0.9289364027280402 -0.21360947507492697" rpy="1.5707963267948952 -2.4716340085717443e-14 7.330873430963117e-16" />
             <geometry>
-                <mesh filename="$(find sub_rsp)/description/meshes/brm_base-v1.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="$(find sub_rsp)/description/meshes/brm_base-v1.dae" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
@@ -142,13 +142,13 @@
         <visual name="brm_top-v1_visual">
             <origin xyz="-0.9289364053769353 0.1936094750749188 1.3193775332918734" rpy="-3.1415926535897665 1.570796326794895 0" />
             <geometry>
-                <mesh filename="$(find sub_rsp)/description/meshes/brm_top-v1.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="$(find sub_rsp)/description/meshes/brm_top-v1.dae" scale="0.001 0.001 0.001" />
             </geometry>
         </visual>
         <collision name="brm_top-v1_collision">
             <origin xyz="-0.9289364053769353 0.1936094750749188 1.3193775332918734" rpy="-3.1415926535897665 1.570796326794895 0" />
             <geometry>
-                <mesh filename="$(find sub_rsp)/description/meshes/brm_top-v1.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="$(find sub_rsp)/description/meshes/brm_top-v1.dae" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
@@ -161,13 +161,13 @@
         <visual name="fbrm_top-v1_visual">
             <origin xyz="-1.0696775453457266 1.0318863993949852 0.17740946870962515" rpy="-1.5707963267948981 2.669008313132985e-14 5.755341776617102e-15" />
             <geometry>
-                <mesh filename="$(find sub_rsp)/description/meshes/fbrm_top-v1.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="$(find sub_rsp)/description/meshes/fbrm_top-v1.dae" scale="0.001 0.001 0.001" />
             </geometry>
         </visual>
         <collision name="fbrm_top-v1_collision">
             <origin xyz="-1.0696775453457266 1.0318863993949852 0.17740946870962515" rpy="-1.5707963267948981 2.669008313132985e-14 5.755341776617102e-15" />
             <geometry>
-                <mesh filename="$(find sub_rsp)/description/meshes/fbrm_top-v1.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="$(find sub_rsp)/description/meshes/fbrm_top-v1.dae" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
@@ -180,13 +180,13 @@
         <visual name="fbrm_base-v1_visual">
             <origin xyz="-1.2940775453457287 1.0318864073205563 0.17740947698100687" rpy="-1.5707963267948981 -2.625987170928767e-14 -2.979784215054226e-15" />
             <geometry>
-                <mesh filename="$(find sub_rsp)/description/meshes/fbrm_base-v1.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="$(find sub_rsp)/description/meshes/fbrm_base-v1.dae" scale="0.001 0.001 0.001" />
             </geometry>
         </visual>
         <collision name="fbrm_base-v1_collision">
             <origin xyz="-1.2940775453457287 1.0318864073205563 0.17740947698100687" rpy="-1.5707963267948981 -2.625987170928767e-14 -2.979784215054226e-15" />
             <geometry>
-                <mesh filename="$(find sub_rsp)/description/meshes/fbrm_base-v1.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="$(find sub_rsp)/description/meshes/fbrm_base-v1.dae" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
@@ -199,13 +199,13 @@
         <visual name="flm_top-v1_visual">
             <origin xyz="-1.3193775346812897 0.19360947507493415 -0.9289364027280383" rpy="-3.1415926535897927 1.4873587061539996e-15 -2.4896751327219022e-14" />
             <geometry>
-                <mesh filename="$(find sub_rsp)/description/meshes/flm_top-v1.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="$(find sub_rsp)/description/meshes/flm_top-v1.dae" scale="0.001 0.001 0.001" />
             </geometry>
         </visual>
         <collision name="flm_top-v1_collision">
             <origin xyz="-1.3193775346812897 0.19360947507493415 -0.9289364027280383" rpy="-3.1415926535897927 1.4873587061539996e-15 -2.4896751327219022e-14" />
             <geometry>
-                <mesh filename="$(find sub_rsp)/description/meshes/flm_top-v1.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="$(find sub_rsp)/description/meshes/flm_top-v1.dae" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
@@ -218,13 +218,13 @@
         <visual name="blm_top-v1_visual">
             <origin xyz="1.319377530642972 0.193609475074865 0.9289364039875165" rpy="1.5333906649291654e-16 8.743006315301518e-16 3.141592653589764" />
             <geometry>
-                <mesh filename="$(find sub_rsp)/description/meshes/blm_top-v1.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="$(find sub_rsp)/description/meshes/blm_top-v1.dae" scale="0.001 0.001 0.001" />
             </geometry>
         </visual>
         <collision name="blm_top-v1_collision">
             <origin xyz="1.319377530642972 0.193609475074865 0.9289364039875165" rpy="1.5333906649291654e-16 8.743006315301518e-16 3.141592653589764" />
             <geometry>
-                <mesh filename="$(find sub_rsp)/description/meshes/blm_top-v1.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="$(find sub_rsp)/description/meshes/blm_top-v1.dae" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
@@ -237,13 +237,13 @@
         <visual name="frm_top-v1_visual">
             <origin xyz="-1.319377534681289 0.19360947507492632 -0.9289364027280388" rpy="3.141592653589793 -3.4450928447750876e-16 -2.450817326860018e-14" />
             <geometry>
-                <mesh filename="$(find sub_rsp)/description/meshes/frm_top-v1.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="$(find sub_rsp)/description/meshes/frm_top-v1.dae" scale="0.001 0.001 0.001" />
             </geometry>
         </visual>
         <collision name="frm_top-v1_collision">
             <origin xyz="-1.319377534681289 0.19360947507492632 -0.9289364027280388" rpy="3.141592653589793 -3.4450928447750876e-16 -2.450817326860018e-14" />
             <geometry>
-                <mesh filename="$(find sub_rsp)/description/meshes/frm_top-v1.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="$(find sub_rsp)/description/meshes/frm_top-v1.dae" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
@@ -256,13 +256,13 @@
         <visual name="blm_base-v1_visual">
             <origin xyz="-1.3193775346812902 -0.9289364027280412 -0.21360947507493372" rpy="1.5707963267948954 -2.473021787352519e-14 7.330873430963115e-16" />
             <geometry>
-                <mesh filename="$(find sub_rsp)/description/meshes/blm_base-v1.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="$(find sub_rsp)/description/meshes/blm_base-v1.dae" scale="0.001 0.001 0.001" />
             </geometry>
         </visual>
         <collision name="blm_base-v1_collision">
             <origin xyz="-1.3193775346812902 -0.9289364027280412 -0.21360947507493372" rpy="1.5707963267948954 -2.473021787352519e-14 7.330873430963115e-16" />
             <geometry>
-                <mesh filename="$(find sub_rsp)/description/meshes/blm_base-v1.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="$(find sub_rsp)/description/meshes/blm_base-v1.dae" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
@@ -275,13 +275,13 @@
         <visual name="flm_base-v1_visual">
             <origin xyz="-1.319377534681289 -0.9289364027280423 -0.21360947507493436" rpy="1.5707963267948961 -2.488287353941124e-14 7.330873430963114e-16" />
             <geometry>
-                <mesh filename="$(find sub_rsp)/description/meshes/flm_base-v1.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="$(find sub_rsp)/description/meshes/flm_base-v1.dae" scale="0.001 0.001 0.001" />
             </geometry>
         </visual>
         <collision name="flm_base-v1_collision">
             <origin xyz="-1.319377534681289 -0.9289364027280423 -0.21360947507493436" rpy="1.5707963267948961 -2.488287353941124e-14 7.330873430963114e-16" />
             <geometry>
-                <mesh filename="$(find sub_rsp)/description/meshes/flm_base-v1.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="$(find sub_rsp)/description/meshes/flm_base-v1.dae" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
@@ -294,13 +294,13 @@
         <visual name="frm_base-v1_visual">
             <origin xyz="-1.3193775346812897 -0.9289364027280405 -0.2136094750749274" rpy="1.570796326794895 -2.471634008571747e-14 7.330873430963114e-16" />
             <geometry>
-                <mesh filename="$(find sub_rsp)/description/meshes/frm_base-v1.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="$(find sub_rsp)/description/meshes/frm_base-v1.dae" scale="0.001 0.001 0.001" />
             </geometry>
         </visual>
         <collision name="frm_base-v1_collision">
             <origin xyz="-1.3193775346812897 -0.9289364027280405 -0.2136094750749274" rpy="1.570796326794895 -2.471634008571747e-14 7.330873430963114e-16" />
             <geometry>
-                <mesh filename="$(find sub_rsp)/description/meshes/frm_base-v1.stl" scale="0.001 0.001 0.001" />
+                <mesh filename="$(find sub_rsp)/description/meshes/frm_base-v1.dae" scale="0.001 0.001 0.001" />
             </geometry>
         </collision>
     </link>
