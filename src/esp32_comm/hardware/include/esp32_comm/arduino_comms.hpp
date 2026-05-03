@@ -84,7 +84,7 @@ public:
     std::string response = send_msg("\r");
   }
 
-  void read_encoder_values(int &val_1, int &val_2)
+  void read_encoder_values()
   {
     // std::string response = send_msg("e\r");
 

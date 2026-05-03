@@ -240,7 +240,7 @@ hardware_interface::return_type DiffDriveArduinoHardware::read(
     return hardware_interface::return_type::ERROR;
   }
 
-  comms_.read_encoder_values(wheel_rl_.enc, wheel_rr_.enc);
+  // comms_.read_encoder_values(wheel_rl_.enc, wheel_rr_.enc);
 
   double delta_seconds = period.seconds();
 
